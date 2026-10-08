@@ -1,0 +1,33 @@
+{
+ "generated_at": "2026-10-09T03:19:44",
+ "daily": [
+  {
+   "date": "2026-10-09",
+   "following_likes": 3,
+   "foryou_likes": 5,
+   "total_likes": 8,
+   "followers": 37,
+   "follower_gain": 0,
+   "gain_per_foryou_pct": 0.0,
+   "runs_ok": 1,
+   "runs_total": 1
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-10-09T03:13:27",
+   "hour": 3,
+   "following": {
+    "target": 3,
+    "liked": 3
+   },
+   "foryou": {
+    "target": 5,
+    "liked": 5
+   },
+   "ok": true,
+   "followers": 37,
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X いいね稼働ダッシュボード</title>
+<style>
+:root{
+  --navy:#16233f; --navy-2:#223558; --gold:#c8a45c; --red:#b8373a;
+  --bg:#f6f4ef; --card:#fff; --line:#e2ddd2; --text:#1d2433; --muted:#6c7488;
+  --ok:#2e7d55; --ng:#b8373a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:24px 16px 64px}
+header{border-bottom:2px solid var(--navy);padding-bottom:14px;margin-bottom:22px}
+h1{margin:0;font-size:22px;letter-spacing:.06em;color:var(--navy)}
+.sub{color:var(--muted);font-size:12px;margin-top:6px;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+h2{font-size:15px;color:var(--navy);margin:30px 0 10px;letter-spacing:.05em;
+  border-left:4px solid var(--gold);padding-left:9px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+.card .k{font-size:11px;color:var(--muted);letter-spacing:.08em;
+  font-family:system-ui,sans-serif}
+.card .v{font-size:27px;margin-top:5px;color:var(--navy);
+  font-family:system-ui,sans-serif;font-weight:600}
+.card .v small{font-size:13px;color:var(--muted);font-weight:400;margin-left:3px}
+table{width:100%;border-collapse:collapse;background:var(--card);
+  border:1px solid var(--line);border-radius:8px;overflow:hidden;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:13px}
+th,td{padding:9px 11px;text-align:right;border-bottom:1px solid var(--line)}
+th{background:var(--navy);color:#fff;font-weight:500;font-size:11.5px;
+  letter-spacing:.05em;text-align:right}
+th:first-child,td:first-child{text-align:left}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#fbfaf7}
+.pos{color:var(--ok);font-weight:600}
+.zero{color:var(--muted)}
+.hours{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.h{width:46px;padding:5px 0;text-align:center;border-radius:5px;font-size:11px;
+  border:1px solid var(--line);background:#fff;color:var(--muted);
+  font-family:system-ui,sans-serif}
+.h.ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+.h.part{background:var(--gold);color:#3a2d12;border-color:var(--gold)}
+.h.ng{background:var(--ng);color:#fff;border-color:var(--ng)}
+.legend{font-size:11px;color:var(--muted);margin-top:9px;
+  font-family:system-ui,sans-serif}
+.legend span{display:inline-block;width:10px;height:10px;border-radius:2px;
+  margin:0 4px 0 12px;vertical-align:-1px}
+.bar{height:7px;background:#ece7dc;border-radius:4px;overflow:hidden;margin-top:5px}
+.bar i{display:block;height:100%;background:var(--navy-2)}
+.empty{color:var(--muted);padding:20px;text-align:center;
+  font-family:system-ui,sans-serif;font-size:13px}
+@media(max-width:560px){.card .v{font-size:22px}th,td{padding:7px 7px;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>X いいね稼働ダッシュボード</h1>
+    <div class="sub">@Umapro_Saiki ／ 最終更新 <span id="gen">—</span></div>
+  </header>
+
+  <h2>今日</h2>
+  <div class="cards" id="today"></div>
+
+  <h2>時間ごとの実行状況（今日）</h2>
+  <div class="hours" id="hours"></div>
+  <div class="legend">
+    <span style="background:#2e7d55"></span>完了
+    <span style="background:#c8a45c"></span>一部のみ
+    <span style="background:#b8373a"></span>失敗
+    <span style="background:#fff;border:1px solid #e2ddd2"></span>未実行
+  </div>
+
+  <h2>日ごとの推移</h2>
+  <div id="dailyWrap"></div>
+
+  <h2>直近の実行ログ</h2>
+  <div id="runsWrap"></div>
+</div>
+
+<script>
+const N = v => (v === null || v === undefined) ? "—" : v.toLocaleString("ja-JP");
+
+function card(k, v, sub) {
+  return `<div class="card"><div class="k">${k}</div>
+    <div class="v">${v}${sub ? `<small>${sub}</small>` : ""}</div></div>`;
+}
+
+fetch("data.json?" + Date.now()).then(r => r.json()).then(d => {
+  document.getElementById("gen").textContent = (d.generated_at || "").replace("T", " ");
+  const days = d.daily || [], runs = d.runs || [];
+  const today = days.length ? days[days.length - 1] : null;
+
+  // --- 今日のサマリ ---
+  document.getElementById("today").innerHTML = today ? [
+    card("フォロワー", N(today.followers)),
+    card("今日の増加", (today.follower_gain > 0 ? "+" : "") + N(today.follower_gain)),
+    card("いいね合計", N(today.total_likes), "件"),
+    card("おすすめ", N(today.foryou_likes), "件"),
+    card("フォロー中", N(today.following_likes), "件"),
+    card("増加率", today.gain_per_foryou_pct === null ? "—" : today.gain_per_foryou_pct + "%",
+         "/おすすめ100件あたり"),
+  ].join("") : `<div class="empty">まだデータがありません</div>`;
+
+  // --- 時間ごと ---
+  const byHour = {};
+  const todayStr = today ? today.date : "";
+  runs.filter(r => (r.at || "").startsWith(todayStr)).forEach(r => {
+    const got = (r.following.liked || 0) + (r.foryou.liked || 0);
+    const want = (r.following.target || 0) + (r.foryou.target || 0);
+    byHour[r.hour] = r.ok ? "ok" : (got > 0 ? "part" : "ng");
+  });
+  let hh = "";
+  for (let h = 7; h <= 22; h++) {
+    hh += `<div class="h ${byHour[h] || ""}">${String(h).padStart(2, "0")}時</div>`;
+  }
+  document.getElementById("hours").innerHTML = hh;
+
+  // --- 日ごと ---
+  const maxLikes = Math.max(1, ...days.map(x => x.total_likes || 0));
+  document.getElementById("dailyWrap").innerHTML = days.length ? `<table>
+    <thead><tr><th>日付</th><th>フォロワー</th><th>増加</th>
+      <th>おすすめ</th><th>フォロー中</th><th>合計</th>
+      <th>増加率(%)</th><th>実行</th></tr></thead>
+    <tbody>${days.slice().reverse().map(x => `<tr>
+      <td>${x.date}</td>
+      <td>${N(x.followers)}</td>
+      <td class="${x.follower_gain > 0 ? "pos" : "zero"}">${x.follower_gain > 0 ? "+" : ""}${N(x.follower_gain)}</td>
+      <td>${N(x.foryou_likes)}</td>
+      <td>${N(x.following_likes)}</td>
+      <td>${N(x.total_likes)}<div class="bar"><i style="width:${(x.total_likes / maxLikes * 100).toFixed(0)}%"></i></div></td>
+      <td>${x.gain_per_foryou_pct === null ? "—" : x.gain_per_foryou_pct}</td>
+      <td>${x.runs_ok}/${x.runs_total}</td>
+    </tr>`).join("")}</tbody></table>` : `<div class="empty">まだデータがありません</div>`;
+
+  // --- 実行ログ ---
+  document.getElementById("runsWrap").innerHTML = runs.length ? `<table>
+    <thead><tr><th>実行時刻</th><th>フォロー中</th><th>おすすめ</th>
+      <th>フォロワー</th><th>結果</th></tr></thead>
+    <tbody>${runs.slice().reverse().slice(0, 40).map(r => `<tr>
+      <td>${(r.at || "").replace("T", " ")}</td>
+      <td>${r.following.liked || 0}/${r.following.target || 0}</td>
+      <td>${r.foryou.liked || 0}/${r.foryou.target || 0}</td>
+      <td>${N(r.followers)}</td>
+      <td class="${r.ok ? "pos" : "zero"}">${r.ok ? "完了" : (r.note || "未達")}</td>
+    </tr>`).join("")}</tbody></table>` : `<div class="empty">まだ実行されていません</div>`;
+}).catch(e => {
+  document.getElementById("today").innerHTML =
+    `<div class="empty">データを読み込めませんでした（${e}）</div>`;
+});
+</script>
+</body>
+</html>
