@@ -3,155 +3,554 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>X いいね稼働ダッシュボード</title>
+<title>X 運用ダッシュボード — どてっぱん</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#16233f; --navy-2:#223558; --gold:#c8a45c; --red:#b8373a;
-  --bg:#f6f4ef; --card:#fff; --line:#e2ddd2; --text:#1d2433; --muted:#6c7488;
-  --ok:#2e7d55; --ng:#b8373a;
+  color-scheme: light;
+  --surface-0:#f3efe7;        /* ページ地 */
+  --surface-1:#faf8f4;        /* カード／チャート面 */
+  --surface-2:#f0ebe1;        /* 沈んだ面 */
+  --line:#e0d8c9;
+  --line-strong:#cfc3ad;
+  --ink:#141a26;
+  --ink-2:#4a5468;
+  --ink-3:#7d869a;
+  --navy:#1b2947;
+  --gold:#b0890e;
+  --vermillion:#b63b39;
+  --s1:#3353a0;               /* 系列1 おすすめ */
+  --s2:#6b8fe2;               /* 系列2 フォロー中 */
+  --ok:#009476;
+  --warn:#b0890e;
+  --bad:#b63b39;
+  --grid:#e6dfd2;
+  --shadow:0 1px 2px rgba(20,26,38,.05), 0 8px 24px -12px rgba(20,26,38,.14);
 }
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])){
+    color-scheme: dark;
+    --surface-0:#0e131d; --surface-1:#141a26; --surface-2:#1b2231;
+    --line:#2a3345; --line-strong:#3a4559;
+    --ink:#f2f4f8; --ink-2:#aab3c4; --ink-3:#7d869a;
+    --navy:#c9d4ea; --gold:#d2a62a; --vermillion:#e0706c;
+    --s1:#385baf; --s2:#6e92e5;
+    --ok:#00908d; --warn:#b0890e; --bad:#ca5551;
+    --grid:#242d3e;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --surface-0:#0e131d; --surface-1:#141a26; --surface-2:#1b2231;
+  --line:#2a3345; --line-strong:#3a4559;
+  --ink:#f2f4f8; --ink-2:#aab3c4; --ink-3:#7d869a;
+  --navy:#c9d4ea; --gold:#d2a62a; --vermillion:#e0706c;
+  --s1:#385baf; --s2:#6e92e5;
+  --ok:#00908d; --warn:#b0890e; --bad:#ca5551;
+  --grid:#242d3e;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+}
+
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);
-  font-family:"Hiragino Mincho ProN","Yu Mincho",serif;}
-.wrap{max-width:1040px;margin:0 auto;padding:24px 16px 64px}
-header{border-bottom:2px solid var(--navy);padding-bottom:14px;margin-bottom:22px}
-h1{margin:0;font-size:22px;letter-spacing:.06em;color:var(--navy)}
-.sub{color:var(--muted);font-size:12px;margin-top:6px;
-  font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-h2{font-size:15px;color:var(--navy);margin:30px 0 10px;letter-spacing:.05em;
-  border-left:4px solid var(--gold);padding-left:9px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
-.card .k{font-size:11px;color:var(--muted);letter-spacing:.08em;
-  font-family:system-ui,sans-serif}
-.card .v{font-size:27px;margin-top:5px;color:var(--navy);
-  font-family:system-ui,sans-serif;font-weight:600}
-.card .v small{font-size:13px;color:var(--muted);font-weight:400;margin-left:3px}
-table{width:100%;border-collapse:collapse;background:var(--card);
-  border:1px solid var(--line);border-radius:8px;overflow:hidden;
-  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:13px}
-th,td{padding:9px 11px;text-align:right;border-bottom:1px solid var(--line)}
-th{background:var(--navy);color:#fff;font-weight:500;font-size:11.5px;
-  letter-spacing:.05em;text-align:right}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--surface-0); color:var(--ink);
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI","Noto Sans JP",sans-serif;
+  font-feature-settings:"tnum" 1;
+  line-height:1.6;
+}
+.serif{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px 80px}
+
+/* ---------- ヘッダー ---------- */
+header{padding:38px 0 22px;position:relative}
+.eyebrow{
+  font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:600;margin-bottom:12px
+}
+.title-row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+h1{
+  font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;
+  margin:0;font-size:clamp(23px,3.4vw,33px);font-weight:600;
+  letter-spacing:.04em;color:var(--ink);line-height:1.25
+}
+h1 .rule{
+  display:block;width:52px;height:3px;margin-top:14px;
+  background:linear-gradient(90deg,var(--gold) 0%,var(--gold) 60%,transparent 60%);
+}
+.meta{font-size:11.5px;color:var(--ink-3);text-align:right;letter-spacing:.02em}
+.meta b{color:var(--ink-2);font-weight:500}
+.themebtn{
+  margin-top:8px;background:none;border:1px solid var(--line-strong);color:var(--ink-3);
+  border-radius:999px;padding:4px 12px;font-size:11px;cursor:pointer;font-family:inherit;
+  transition:.15s
+}
+.themebtn:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ---------- セクション ---------- */
+section{margin-top:40px}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:16px}
+h2{
+  font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;
+  font-size:16px;font-weight:600;margin:0;letter-spacing:.09em;color:var(--ink)
+}
+.sec-head .note{font-size:11.5px;color:var(--ink-3)}
+.sec-head::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* ---------- ヒーロー ---------- */
+.hero{
+  background:var(--surface-1);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);padding:26px 28px;
+  display:grid;grid-template-columns:minmax(210px,1fr) 2fr;gap:30px;align-items:center
+}
+.hero-main .lab{font-size:11px;letter-spacing:.16em;color:var(--ink-3);font-weight:600;text-transform:uppercase}
+.hero-figure{
+  font-size:clamp(48px,8vw,68px);font-weight:600;line-height:1;margin-top:8px;
+  letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums
+}
+.delta{display:inline-flex;align-items:center;gap:5px;margin-top:12px;
+  font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px}
+.delta.up{color:var(--ok);background:color-mix(in srgb,var(--ok) 11%,transparent)}
+.delta.flat{color:var(--ink-3);background:var(--surface-2)}
+.delta.down{color:var(--bad);background:color-mix(in srgb,var(--bad) 11%,transparent)}
+.spark{margin-top:16px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.kpi{background:var(--surface-1);padding:15px 16px}
+.kpi .k{font-size:10.5px;letter-spacing:.09em;color:var(--ink-3);font-weight:600;
+  display:flex;align-items:center;gap:6px}
+.kpi .k i{width:9px;height:9px;border-radius:2.5px;display:inline-block;flex:none}
+.kpi .v{font-size:25px;font-weight:600;margin-top:7px;letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums;color:var(--ink)}
+.kpi .v small{font-size:12px;font-weight:400;color:var(--ink-3);margin-left:3px}
+.kpi .sub{font-size:10.5px;color:var(--ink-3);margin-top:3px}
+
+/* ---------- カード ---------- */
+.card{background:var(--surface-1);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);padding:22px 24px}
+.card h3{font-family:"Shippori Mincho",serif;font-size:13.5px;font-weight:600;
+  margin:0 0 3px;letter-spacing:.06em;color:var(--ink)}
+.card .cap{font-size:11px;color:var(--ink-3);margin-bottom:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:860px){.grid2{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:22px}}
+
+/* ---------- 凡例 ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:11.5px;color:var(--ink-2)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+
+/* ---------- 時間グリッド ---------- */
+.hours{display:grid;grid-template-columns:repeat(auto-fit,minmax(58px,1fr));gap:6px}
+.hr{border:1px solid var(--line);border-radius:8px;background:var(--surface-1);
+  padding:9px 4px 8px;text-align:center;position:relative;overflow:hidden;
+  transition:transform .12s ease, box-shadow .12s ease;cursor:default}
+.hr:hover{transform:translateY(-2px);box-shadow:var(--shadow);z-index:2}
+.hr .t{font-size:11px;font-weight:600;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.hr .m{font-size:9.5px;color:var(--ink-3);margin-top:2px;display:flex;
+  align-items:center;justify-content:center;gap:3px}
+.hr .fill{position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--line)}
+.hr.ok{border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}
+.hr.ok .fill{background:var(--ok)} .hr.ok .m{color:var(--ok)}
+.hr.part{border-color:color-mix(in srgb,var(--warn) 45%,var(--line))}
+.hr.part .fill{background:var(--warn)} .hr.part .m{color:var(--warn)}
+.hr.bad{border-color:color-mix(in srgb,var(--bad) 45%,var(--line))}
+.hr.bad .fill{background:var(--bad)} .hr.bad .m{color:var(--bad)}
+.hr.idle{background:var(--surface-2);border-style:dashed}
+.hr.idle .t{color:var(--ink-3)}
+
+/* ---------- 表 ---------- */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface-1)}
+table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:620px}
+th,td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--line);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--surface-2);color:var(--ink-2);font-weight:600;font-size:10.5px;
+  letter-spacing:.07em;position:sticky;top:0}
 th:first-child,td:first-child{text-align:left}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:nth-child(even){background:#fbfaf7}
-.pos{color:var(--ok);font-weight:600}
-.zero{color:var(--muted)}
-.hours{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
-.h{width:46px;padding:5px 0;text-align:center;border-radius:5px;font-size:11px;
-  border:1px solid var(--line);background:#fff;color:var(--muted);
-  font-family:system-ui,sans-serif}
-.h.ok{background:var(--ok);color:#fff;border-color:var(--ok)}
-.h.part{background:var(--gold);color:#3a2d12;border-color:var(--gold)}
-.h.ng{background:var(--ng);color:#fff;border-color:var(--ng)}
-.legend{font-size:11px;color:var(--muted);margin-top:9px;
-  font-family:system-ui,sans-serif}
-.legend span{display:inline-block;width:10px;height:10px;border-radius:2px;
-  margin:0 4px 0 12px;vertical-align:-1px}
-.bar{height:7px;background:#ece7dc;border-radius:4px;overflow:hidden;margin-top:5px}
-.bar i{display:block;height:100%;background:var(--navy-2)}
-.empty{color:var(--muted);padding:20px;text-align:center;
-  font-family:system-ui,sans-serif;font-size:13px}
-@media(max-width:560px){.card .v{font-size:22px}th,td{padding:7px 7px;font-size:12px}}
+tbody tr:hover td{background:color-mix(in srgb,var(--gold) 5%,transparent)}
+td.pos{color:var(--ok);font-weight:600}
+td.neg{color:var(--bad);font-weight:600}
+td.zero{color:var(--ink-3)}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:10.5px;font-weight:600}
+.pill.ok{color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent)}
+.pill.part{color:var(--warn);background:color-mix(in srgb,var(--warn) 14%,transparent)}
+.pill.bad{color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,transparent)}
+
+.empty{padding:40px;text-align:center;color:var(--ink-3);font-size:13px}
+footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:11px;color:var(--ink-3);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ---------- ツールチップ ---------- */
+#tip{position:fixed;pointer-events:none;opacity:0;transition:opacity .1s;z-index:50;
+  background:var(--ink);color:var(--surface-1);border-radius:8px;padding:9px 12px;
+  font-size:11.5px;line-height:1.55;box-shadow:0 8px 24px -8px rgba(0,0,0,.5);max-width:230px}
+#tip b{font-size:12px;display:block;margin-bottom:3px}
+#tip .row{display:flex;justify-content:space-between;gap:14px}
+#tip i{width:8px;height:8px;border-radius:2px;display:inline-block;margin-right:5px}
+svg .hit{fill:transparent;cursor:pointer}
+svg text{font-family:"Inter",system-ui,sans-serif;font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>X いいね稼働ダッシュボード</h1>
-    <div class="sub">@Umapro_Saiki ／ 最終更新 <span id="gen">—</span></div>
+    <div class="eyebrow">Doteppan &middot; X Operations</div>
+    <div class="title-row">
+      <h1>X 運用ダッシュボード<span class="rule"></span></h1>
+      <div>
+        <div class="meta">
+          <b>@Umapro_Saiki</b><br>
+          最終更新 <span id="gen">—</span>
+        </div>
+        <button class="themebtn" id="themebtn">表示切替</button>
+      </div>
+    </div>
   </header>
 
-  <h2>今日</h2>
-  <div class="cards" id="today"></div>
+  <section>
+    <div class="hero">
+      <div class="hero-main">
+        <div class="lab">Followers</div>
+        <div class="hero-figure" id="heroFollowers">—</div>
+        <div id="heroDelta"></div>
+        <div class="spark" id="spark"></div>
+      </div>
+      <div class="kpis" id="kpis"></div>
+    </div>
+  </section>
 
-  <h2>時間ごとの実行状況（今日）</h2>
-  <div class="hours" id="hours"></div>
-  <div class="legend">
-    <span style="background:#2e7d55"></span>完了
-    <span style="background:#c8a45c"></span>一部のみ
-    <span style="background:#b8373a"></span>失敗
-    <span style="background:#fff;border:1px solid #e2ddd2"></span>未実行
-  </div>
+  <section>
+    <div class="sec-head"><h2>本日の稼働</h2><span class="note">7時〜22時／毎時</span></div>
+    <div class="card">
+      <h3>時間ごとの実行状況</h3>
+      <div class="cap">各マスは1時間の実行。下線の色と文字で状態を示します。</div>
+      <div class="hours" id="hours"></div>
+      <div class="legend">
+        <span><i style="background:var(--ok)"></i>完了</span>
+        <span><i style="background:var(--warn)"></i>一部のみ</span>
+        <span><i style="background:var(--bad)"></i>失敗</span>
+        <span><i style="background:var(--surface-2);border:1px dashed var(--line-strong)"></i>未実行</span>
+      </div>
+    </div>
+  </section>
 
-  <h2>日ごとの推移</h2>
-  <div id="dailyWrap"></div>
+  <section>
+    <div class="sec-head"><h2>推移</h2><span class="note">日ごと</span></div>
+    <div class="grid2">
+      <div class="card">
+        <h3>フォロワー数</h3>
+        <div class="cap">日ごとの推移</div>
+        <div id="chartFollowers"></div>
+      </div>
+      <div class="card">
+        <h3>いいね件数</h3>
+        <div class="cap">おすすめ／フォロー中の内訳</div>
+        <div id="chartLikes"></div>
+        <div class="legend">
+          <span><i style="background:var(--s1)"></i>おすすめ</span>
+          <span><i style="background:var(--s2)"></i>フォロー中</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>直近の実行ログ</h2>
-  <div id="runsWrap"></div>
+  <section>
+    <div class="sec-head"><h2>効率</h2><span class="note">おすすめ100件あたりのフォロワー増加</span></div>
+    <div class="card">
+      <h3>増加率</h3>
+      <div class="cap">おすすめタブのいいね100件に対して、フォロワーが何人増えたか</div>
+      <div id="chartRate"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>日ごとの記録</h2></div>
+    <div class="tablewrap" id="dailyTable"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>実行ログ</h2><span class="note">直近40回</span></div>
+    <div class="tablewrap" id="runsTable"></div>
+  </section>
+
+  <footer>
+    <span>データは1時間ごとに自動更新されます</span>
+    <span>どてっぱん ／ うまプロ</span>
+  </footer>
 </div>
+<div id="tip"></div>
 
 <script>
-const N = v => (v === null || v === undefined) ? "—" : v.toLocaleString("ja-JP");
+const $ = s => document.querySelector(s);
+const N = v => (v === null || v === undefined) ? "—" : Number(v).toLocaleString("ja-JP");
+const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const SVGNS = "http://www.w3.org/2000/svg";
+const el = (t, a = {}) => { const e = document.createElementNS(SVGNS, t);
+  for (const k in a) e.setAttribute(k, a[k]); return e; };
 
-function card(k, v, sub) {
-  return `<div class="card"><div class="k">${k}</div>
-    <div class="v">${v}${sub ? `<small>${sub}</small>` : ""}</div></div>`;
+/* ---------- ツールチップ ---------- */
+const tip = $("#tip");
+function showTip(html, ev){
+  tip.innerHTML = html; tip.style.opacity = 1;
+  const r = tip.getBoundingClientRect();
+  let x = ev.clientX + 14, y = ev.clientY - r.height - 10;
+  if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - 14;
+  if (y < 8) y = ev.clientY + 16;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+const hideTip = () => tip.style.opacity = 0;
+addEventListener("scroll", hideTip, {passive:true});
+
+/* ---------- 折れ線（単一系列） ---------- */
+function lineChart(mount, rows, key, color, opt = {}) {
+  const {unit = "", fill = true, zeroLine = false, label = "値"} = opt;
+  mount.innerHTML = "";
+  const pts = rows.filter(r => r[key] !== null && r[key] !== undefined);
+  if (pts.length < 1) { mount.innerHTML = '<div class="empty">データがありません</div>'; return; }
+  const W = mount.clientWidth || 480, H = 190;
+  const m = {t:16, r:16, b:28, l:46};
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const vals = pts.map(p => +p[key]);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (zeroLine) { lo = Math.min(lo, 0); hi = Math.max(hi, 0); }
+  if (lo === hi) { lo -= 1; hi += 1; }
+  const pad = (hi - lo) * .18; lo -= pad; hi += pad;
+  // 目盛りの刻み幅から小数桁を決める（0.79 が「1,1,0」に潰れるのを防ぐ）
+  const step = (hi - lo) / 3;
+  const dec = step >= 5 ? 0 : step >= 1 ? 1 : 2;
+  const fmtAxis = v => v.toFixed(dec);
+  const fmtVal = v => dec === 0 ? N(Math.round(v)) : (+v).toFixed(Math.min(dec, 2));
+  const X = i => m.l + (pts.length === 1 ? iw/2 : i / (pts.length - 1) * iw);
+  const Y = v => m.t + ih - (v - lo) / (hi - lo) * ih;
+
+  const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, width:"100%", height:H,
+    role:"img", "aria-label":label + "の推移"});
+  for (let i = 0; i <= 3; i++) {
+    const v = lo + (hi - lo) * i / 3, y = Y(v);
+    svg.appendChild(el("line", {x1:m.l, x2:W-m.r, y1:y, y2:y,
+      stroke:cssv("--grid"), "stroke-width":1}));
+    const tx = el("text", {x:m.l-8, y:y+4, "text-anchor":"end",
+      "font-size":10, fill:cssv("--ink-3")});
+    tx.textContent = fmtAxis(v); svg.appendChild(tx);
+  }
+  const area = pts.map((p,i)=>`${X(i)},${Y(+p[key])}`).join(" ");
+  // 面はプラスのみの指標だけ。マイナスを取る指標は線とゼロ線で示す
+  if (fill) {
+    svg.appendChild(el("polygon", {points:`${m.l},${m.t+ih} ${area} ${X(pts.length-1)},${m.t+ih}`,
+      fill:color, opacity:.09}));
+  }
+  if (zeroLine && lo < 0 && hi > 0) {
+    svg.appendChild(el("line", {x1:m.l, x2:W-m.r, y1:Y(0), y2:Y(0),
+      stroke:cssv("--line-strong"), "stroke-width":1}));
+  }
+  svg.appendChild(el("polyline", {points:area, fill:"none", stroke:color,
+    "stroke-width":2, "stroke-linejoin":"round", "stroke-linecap":"round"}));
+  // 点（2pxのサーフェスリング）
+  pts.forEach((p,i) => {
+    svg.appendChild(el("circle", {cx:X(i), cy:Y(+p[key]), r:4.5, fill:color,
+      stroke:cssv("--surface-1"), "stroke-width":2}));
+  });
+  // 末尾だけ直接ラベル
+  const last = pts[pts.length-1];
+  const lx = X(pts.length-1), ly = Y(+last[key]);
+  const lt = el("text", {x: lx - 6, y: ly - 12, "text-anchor":"end",
+    "font-size":11.5, "font-weight":600, fill:cssv("--ink")});
+  lt.textContent = fmtVal(last[key]) + unit; svg.appendChild(lt);
+  // x軸ラベル（両端）
+  [[0, pts[0].date], [pts.length-1, last.date]].forEach(([i,d],k) => {
+    const t = el("text", {x:X(i), y:H-8, "font-size":10, fill:cssv("--ink-3"),
+      "text-anchor": k===0 ? "start" : "end"});
+    t.textContent = (d||"").slice(5); svg.appendChild(t);
+  });
+  // ホバー
+  pts.forEach((p,i) => {
+    const w = iw / Math.max(1, pts.length);
+    const r = el("rect", {x:X(i)-w/2, y:m.t, width:w, height:ih, class:"hit"});
+    r.addEventListener("mousemove", e => showTip(
+      `<b>${p.date}</b><div class="row"><span><i style="background:${color}"></i>${label}</span><span>${fmtVal(p[key])}${unit}</span></div>`, e));
+    r.addEventListener("mouseleave", hideTip);
+    svg.appendChild(r);
+  });
+  mount.appendChild(svg);
 }
 
-fetch("data.json?" + Date.now()).then(r => r.json()).then(d => {
-  document.getElementById("gen").textContent = (d.generated_at || "").replace("T", " ");
+/* ---------- 積み上げ棒（2系列） ---------- */
+function stackedBars(mount, rows) {
+  mount.innerHTML = "";
+  if (!rows.length) { mount.innerHTML = '<div class="empty">データがありません</div>'; return; }
+  const W = mount.clientWidth || 480, H = 190;
+  const m = {t:16, r:16, b:28, l:42};
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const max = Math.max(1, ...rows.map(r => r.total_likes || 0));
+  const band = iw / rows.length;
+  const bw = Math.min(24, band * .6);                 // 24px上限・残りは余白
+  const s1 = cssv("--s1"), s2 = cssv("--s2"), surf = cssv("--surface-1");
+  const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, width:"100%", height:H,
+    role:"img", "aria-label":"いいね件数の内訳"});
+  for (let i = 0; i <= 3; i++) {
+    const y = m.t + ih - ih*i/3;
+    svg.appendChild(el("line", {x1:m.l, x2:W-m.r, y1:y, y2:y, stroke:cssv("--grid"), "stroke-width":1}));
+    const t = el("text", {x:m.l-8, y:y+4, "text-anchor":"end", "font-size":10, fill:cssv("--ink-3")});
+    t.textContent = N(Math.round(max*i/3)); svg.appendChild(t);
+  }
+  rows.forEach((r,i) => {
+    const cx = m.l + band*i + band/2;
+    const h1 = (r.foryou_likes||0)/max*ih;
+    const h2 = (r.following_likes||0)/max*ih;
+    const base = m.t + ih;
+    // 下: おすすめ（角は下端で四角、上端は次の段があるので四角）
+    if (h1 > 0) svg.appendChild(el("rect", {x:cx-bw/2, y:base-h1, width:bw, height:h1, fill:s1}));
+    // 2pxのサーフェスギャップで段を分ける
+    if (h2 > 0) {
+      const y2 = base - h1 - 2 - h2;
+      svg.appendChild(el("rect", {x:cx-bw/2, y:y2, width:bw, height:h2,
+        fill:s2, rx:4, ry:4}));
+      svg.appendChild(el("rect", {x:cx-bw/2, y:y2+h2-4, width:bw, height:4, fill:s2}));
+    }
+    const hit = el("rect", {x:cx-band/2, y:m.t, width:band, height:ih, class:"hit"});
+    hit.addEventListener("mousemove", e => showTip(
+      `<b>${r.date}</b>
+       <div class="row"><span><i style="background:${s1}"></i>おすすめ</span><span>${N(r.foryou_likes)}</span></div>
+       <div class="row"><span><i style="background:${s2}"></i>フォロー中</span><span>${N(r.following_likes)}</span></div>
+       <div class="row" style="border-top:1px solid rgba(255,255,255,.2);margin-top:4px;padding-top:4px">
+         <span>合計</span><span>${N(r.total_likes)}</span></div>`, e));
+    hit.addEventListener("mouseleave", hideTip);
+    svg.appendChild(hit);
+  });
+  [[0, rows[0].date], [rows.length-1, rows[rows.length-1].date]].forEach(([i,d],k)=>{
+    const t = el("text", {x:m.l+band*i+band/2, y:H-8, "font-size":10,
+      fill:cssv("--ink-3"), "text-anchor":"middle"});
+    t.textContent = (d||"").slice(5); svg.appendChild(t);
+  });
+  mount.appendChild(svg);
+}
+
+/* ---------- スパークライン ---------- */
+function spark(mount, rows) {
+  mount.innerHTML = "";
+  const pts = rows.filter(r => r.followers != null);
+  if (pts.length < 2) return;
+  const W = 230, H = 42, vals = pts.map(p=>p.followers);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (lo === hi) { lo--; hi++; }
+  const X = i => i/(pts.length-1)*(W-6)+3;
+  const Y = v => H-4 - (v-lo)/(hi-lo)*(H-12);
+  const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, width:W, height:H, "aria-hidden":"true"});
+  const d = pts.map((p,i)=>`${X(i)},${Y(p.followers)}`).join(" ");
+  svg.appendChild(el("polygon", {points:`3,${H-2} ${d} ${W-3},${H-2}`,
+    fill:cssv("--s1"), opacity:.10}));
+  svg.appendChild(el("polyline", {points:d, fill:"none", stroke:cssv("--s1"),
+    "stroke-width":2, "stroke-linecap":"round", "stroke-linejoin":"round"}));
+  svg.appendChild(el("circle", {cx:X(pts.length-1), cy:Y(vals[vals.length-1]), r:4,
+    fill:cssv("--s1"), stroke:cssv("--surface-1"), "stroke-width":2}));
+  mount.appendChild(svg);
+}
+
+/* ---------- 描画 ---------- */
+let DATA = null;
+function render() {
+  const d = DATA; if (!d) return;
   const days = d.daily || [], runs = d.runs || [];
-  const today = days.length ? days[days.length - 1] : null;
+  const today = days.length ? days[days.length-1] : null;
+  $("#gen").textContent = (d.generated_at||"").replace("T"," ").slice(0,16);
 
-  // --- 今日のサマリ ---
-  document.getElementById("today").innerHTML = today ? [
-    card("フォロワー", N(today.followers)),
-    card("今日の増加", (today.follower_gain > 0 ? "+" : "") + N(today.follower_gain)),
-    card("いいね合計", N(today.total_likes), "件"),
-    card("おすすめ", N(today.foryou_likes), "件"),
-    card("フォロー中", N(today.following_likes), "件"),
-    card("増加率", today.gain_per_foryou_pct === null ? "—" : today.gain_per_foryou_pct + "%",
-         "/おすすめ100件あたり"),
-  ].join("") : `<div class="empty">まだデータがありません</div>`;
+  /* ヒーロー */
+  $("#heroFollowers").textContent = today ? N(today.followers) : "—";
+  const g = today ? today.follower_gain : null;
+  $("#heroDelta").innerHTML = g == null ? "" :
+    `<span class="delta ${g>0?"up":g<0?"down":"flat"}">${g>0?"▲":g<0?"▼":"—"} ${g>0?"+":""}${N(g)} 本日</span>`;
+  spark($("#spark"), days);
 
-  // --- 時間ごと ---
-  const byHour = {};
+  const rate = today && today.gain_per_foryou_pct != null ? today.gain_per_foryou_pct : null;
+  $("#kpis").innerHTML = today ? [
+    {k:"いいね合計", v:N(today.total_likes), u:"件", s:`本日 ${today.runs_ok}/${today.runs_total} 回完了`},
+    {k:"おすすめ", v:N(today.foryou_likes), u:"件", i:"var(--s1)"},
+    {k:"フォロー中", v:N(today.following_likes), u:"件", i:"var(--s2)"},
+    {k:"増加率", v:rate==null?"—":rate, u:rate==null?"":"%", s:"おすすめ100件あたり"},
+  ].map(x=>`<div class="kpi">
+      <div class="k">${x.i?`<i style="background:${x.i}"></i>`:""}${x.k}</div>
+      <div class="v">${x.v}${x.u?`<small>${x.u}</small>`:""}</div>
+      ${x.s?`<div class="sub">${x.s}</div>`:""}
+    </div>`).join("") : '<div class="empty">まだデータがありません</div>';
+
+  /* 時間グリッド */
   const todayStr = today ? today.date : "";
-  runs.filter(r => (r.at || "").startsWith(todayStr)).forEach(r => {
-    const got = (r.following.liked || 0) + (r.foryou.liked || 0);
-    const want = (r.following.target || 0) + (r.foryou.target || 0);
-    byHour[r.hour] = r.ok ? "ok" : (got > 0 ? "part" : "ng");
+  const byHour = {};
+  runs.filter(r => (r.at||"").startsWith(todayStr)).forEach(r => {
+    const got = (r.following.liked||0) + (r.foryou.liked||0);
+    const want = (r.following.target||0) + (r.foryou.target||0);
+    byHour[r.hour] = {got, want, ok:r.ok, note:r.note};
   });
   let hh = "";
   for (let h = 7; h <= 22; h++) {
-    hh += `<div class="h ${byHour[h] || ""}">${String(h).padStart(2, "0")}時</div>`;
+    const v = byHour[h];
+    const cls = !v ? "idle" : v.ok ? "ok" : (v.got > 0 ? "part" : "bad");
+    const mark = !v ? "—" : v.ok ? "✓ 完了" : (v.got>0 ? `△ ${v.got}` : "✕ 0");
+    hh += `<div class="hr ${cls}" data-h="${h}"><div class="t">${String(h).padStart(2,"0")}:00</div>
+      <div class="m">${mark}</div><div class="fill"></div></div>`;
   }
-  document.getElementById("hours").innerHTML = hh;
+  $("#hours").innerHTML = hh;
+  $("#hours").querySelectorAll(".hr").forEach(n => {
+    const v = byHour[n.dataset.h];
+    n.addEventListener("mousemove", e => showTip(
+      v ? `<b>${String(n.dataset.h).padStart(2,"0")}:00 の実行</b>
+           <div class="row"><span>いいね</span><span>${v.got} / ${v.want}</span></div>
+           <div class="row"><span>結果</span><span>${v.ok?"完了":(v.note||"未達")}</span></div>`
+        : `<b>${String(n.dataset.h).padStart(2,"0")}:00</b><div class="row"><span>まだ実行されていません</span></div>`, e));
+    n.addEventListener("mouseleave", hideTip);
+  });
 
-  // --- 日ごと ---
-  const maxLikes = Math.max(1, ...days.map(x => x.total_likes || 0));
-  document.getElementById("dailyWrap").innerHTML = days.length ? `<table>
-    <thead><tr><th>日付</th><th>フォロワー</th><th>増加</th>
-      <th>おすすめ</th><th>フォロー中</th><th>合計</th>
-      <th>増加率(%)</th><th>実行</th></tr></thead>
-    <tbody>${days.slice().reverse().map(x => `<tr>
-      <td>${x.date}</td>
-      <td>${N(x.followers)}</td>
-      <td class="${x.follower_gain > 0 ? "pos" : "zero"}">${x.follower_gain > 0 ? "+" : ""}${N(x.follower_gain)}</td>
-      <td>${N(x.foryou_likes)}</td>
-      <td>${N(x.following_likes)}</td>
-      <td>${N(x.total_likes)}<div class="bar"><i style="width:${(x.total_likes / maxLikes * 100).toFixed(0)}%"></i></div></td>
-      <td>${x.gain_per_foryou_pct === null ? "—" : x.gain_per_foryou_pct}</td>
-      <td>${x.runs_ok}/${x.runs_total}</td>
-    </tr>`).join("")}</tbody></table>` : `<div class="empty">まだデータがありません</div>`;
+  /* グラフ */
+  lineChart($("#chartFollowers"), days, "followers", cssv("--s1"),
+    {label:"フォロワー", fill:true});
+  stackedBars($("#chartLikes"), days);
+  lineChart($("#chartRate"), days, "gain_per_foryou_pct", cssv("--ok"),
+    {label:"増加率", unit:"%", fill:false, zeroLine:true});
 
-  // --- 実行ログ ---
-  document.getElementById("runsWrap").innerHTML = runs.length ? `<table>
-    <thead><tr><th>実行時刻</th><th>フォロー中</th><th>おすすめ</th>
-      <th>フォロワー</th><th>結果</th></tr></thead>
-    <tbody>${runs.slice().reverse().slice(0, 40).map(r => `<tr>
-      <td>${(r.at || "").replace("T", " ")}</td>
-      <td>${r.following.liked || 0}/${r.following.target || 0}</td>
-      <td>${r.foryou.liked || 0}/${r.foryou.target || 0}</td>
-      <td>${N(r.followers)}</td>
-      <td class="${r.ok ? "pos" : "zero"}">${r.ok ? "完了" : (r.note || "未達")}</td>
-    </tr>`).join("")}</tbody></table>` : `<div class="empty">まだ実行されていません</div>`;
-}).catch(e => {
-  document.getElementById("today").innerHTML =
-    `<div class="empty">データを読み込めませんでした（${e}）</div>`;
+  /* 表 */
+  $("#dailyTable").innerHTML = days.length ? `<table>
+    <thead><tr><th>日付</th><th>フォロワー</th><th>増加</th><th>おすすめ</th>
+      <th>フォロー中</th><th>合計</th><th>増加率</th><th>実行</th></tr></thead>
+    <tbody>${days.slice().reverse().map(x=>`<tr>
+      <td>${x.date}</td><td>${N(x.followers)}</td>
+      <td class="${x.follower_gain>0?"pos":x.follower_gain<0?"neg":"zero"}">${x.follower_gain>0?"+":""}${N(x.follower_gain)}</td>
+      <td>${N(x.foryou_likes)}</td><td>${N(x.following_likes)}</td><td>${N(x.total_likes)}</td>
+      <td>${x.gain_per_foryou_pct==null?"—":x.gain_per_foryou_pct+"%"}</td>
+      <td>${x.runs_ok}/${x.runs_total}</td></tr>`).join("")}</tbody></table>`
+    : '<div class="empty">まだデータがありません</div>';
+
+  $("#runsTable").innerHTML = runs.length ? `<table>
+    <thead><tr><th>実行時刻</th><th>フォロー中</th><th>おすすめ</th><th>フォロワー</th><th>結果</th></tr></thead>
+    <tbody>${runs.slice().reverse().slice(0,40).map(r=>{
+      const got=(r.following.liked||0)+(r.foryou.liked||0);
+      const cls = r.ok?"ok":(got>0?"part":"bad");
+      const lab = r.ok?"完了":(got>0?"一部のみ":"失敗");
+      return `<tr><td>${(r.at||"").replace("T"," ")}</td>
+        <td>${r.following.liked||0} / ${r.following.target||0}</td>
+        <td>${r.foryou.liked||0} / ${r.foryou.target||0}</td>
+        <td>${N(r.followers)}</td>
+        <td><span class="pill ${cls}">${lab}</span></td></tr>`;}).join("")}</tbody></table>`
+    : '<div class="empty">まだ実行されていません</div>';
+}
+
+/* テーマ切替 */
+$("#themebtn").addEventListener("click", () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const next = cur === "dark" ? "light" : cur === "light" ? "dark"
+    : (matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark");
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("theme", next); } catch(e) {}
+  render();
 });
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch(e) {}
+
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(render, 160); });
+
+fetch("data.json?" + Date.now()).then(r => r.json()).then(d => { DATA = d; render(); })
+  .catch(e => { $("#kpis").innerHTML = `<div class="empty">データを読み込めませんでした（${e}）</div>`; });
 </script>
 </body>
 </html>
