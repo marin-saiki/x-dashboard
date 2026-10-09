@@ -54,41 +54,55 @@ body{
 .num{font-family:"DM Mono","Space Grotesk",ui-monospace,monospace;font-feature-settings:"tnum" 1}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 
-/* ===== 黒のヒーロー ===== */
-.hero{background:var(--black);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:auto -10% -55% 60%;width:60%;aspect-ratio:1;
-  background:radial-gradient(circle,rgba(192,57,43,.30),transparent 68%);pointer-events:none}
-.hero .wrap{position:relative;z-index:1}
-.brandline{display:flex;align-items:center;gap:12px;margin-bottom:34px}
-.brandline .mark{width:30px;height:30px;border-radius:999px;background:var(--red);flex:none}
+/* ===== 黒のヒーロー（タイルが集まって数字になる） ===== */
+.hero{background:var(--black);color:#fff;position:relative;overflow:hidden;
+  min-height:620px;height:78svh;display:flex;flex-direction:column}
+/* 中段が残りの高さを占め、そこだけをキャンバスにする（上下の文字と絶対に重ならない） */
+.hero-mid{position:relative;flex:1 1 auto;min-height:150px;z-index:0}
+#heroCanvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero::after{content:"";position:absolute;inset:auto -20% -60% 45%;width:70%;aspect-ratio:1;
+  background:radial-gradient(circle,rgba(192,57,43,.28),transparent 70%);pointer-events:none;z-index:0}
+.hero-top,.hero-bot{position:relative;z-index:2}
+.hero-top{padding-top:34px}
+.hero-bot{padding-bottom:26px}
+.brandline{display:flex;align-items:center;gap:12px}
+.brandline .mark{width:28px;height:28px;border-radius:999px;background:var(--red);flex:none}
 .brandline .nm{font-family:"Anton",sans-serif;font-size:17px;letter-spacing:.14em;color:#fff}
 .brandline .sub{font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.5);
   font-family:"Space Grotesk",sans-serif}
-.hero-grid{display:grid;grid-template-columns:minmax(260px,1fr) 1.25fr;gap:40px;align-items:end}
 .hero .lab{font-family:"Space Grotesk",sans-serif;font-size:11px;letter-spacing:.24em;
-  color:rgba(255,255,255,.55);font-weight:600}
-.hero-figure{font-family:"Anton",sans-serif;font-size:clamp(68px,12vw,118px);line-height:.92;
-  letter-spacing:.01em;margin:10px 0 0;color:#fff}
-.tag{display:inline-flex;align-items:center;gap:7px;margin-top:16px;
+  color:rgba(255,255,255,.55);font-weight:600;margin-top:22px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tag{display:inline-flex;align-items:center;gap:7px;
   padding:8px 18px;border-radius:999px;background:rgba(255,255,255,.1);
   -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   font-size:13px;font-weight:700;letter-spacing:.08em;color:#fff}
 .tag.up{background:var(--red)}
-.hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:26px}
+.hero-row{display:flex;align-items:flex-end;justify-content:space-between;gap:34px;flex-wrap:wrap}
+.hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:26px;
+  flex:1;min-width:280px}
 .hs .k{font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,.55);
   display:flex;align-items:center;gap:6px}
 .hs .k i{width:9px;height:9px;border-radius:999px;flex:none}
-.hs .v{font-family:"Anton",sans-serif;font-size:31px;margin-top:6px;letter-spacing:.02em}
+.hs .v{font-family:"Anton",sans-serif;font-size:30px;margin-top:5px;letter-spacing:.02em}
 .hs .v small{font-family:"Noto Sans JP",sans-serif;font-size:12px;font-weight:400;
   color:rgba(255,255,255,.5);margin-left:4px}
 .hs .n{font-size:10.5px;color:rgba(255,255,255,.42);margin-top:2px}
-.hero-sp{margin-top:26px}
-.scrolldown{display:block;text-align:center;margin-top:30px;color:rgba(255,255,255,.5);
-  font-size:25px;text-decoration:none;animation:bounce 1.8s ease-in-out infinite}
+.hero-sp{margin-bottom:4px}
+.replay{background:none;border:1.5px solid rgba(255,255,255,.22);color:rgba(255,255,255,.6);
+  border-radius:999px;padding:6px 15px;font-size:11px;cursor:pointer;font-family:inherit;
+  letter-spacing:.08em;transition:.15s;min-height:32px}
+.replay:hover{border-color:var(--red);background:var(--red);color:#fff}
+.scrolldown{display:block;text-align:center;margin-top:16px;color:rgba(255,255,255,.5);
+  font-size:25px;text-decoration:none;position:relative;z-index:2;
+  animation:bounce 1.8s ease-in-out infinite}
 .scrolldown:hover{color:#fff}
 @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
 @media(prefers-reduced-motion:reduce){.scrolldown{animation:none}}
-@media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:30px}}
+@media(max-width:820px){.hero{height:auto;min-height:0;padding-bottom:10px}
+  .hero-mid{min-height:240px;height:240px;flex:none}
+  .hero-top{padding-top:28px}.hero-bot{padding-bottom:18px}
+  .hero-row{gap:22px}}
 
 /* ===== セクション ===== */
 section.body{padding:58px 0 0}
@@ -170,21 +184,27 @@ svg text{font-family:"DM Mono","Space Grotesk",monospace}
 </head>
 <body data-lang="ja">
 
-<div class="hero">
-  <div class="wrap">
+<div class="hero" id="hero">
+  <div class="wrap hero-top">
     <div class="brandline">
       <span class="mark"></span>
       <span class="nm">UMAPRO</span>
       <span class="sub">X OPERATIONS</span>
     </div>
-    <div class="hero-grid">
+    <div class="lab">FOLLOWERS</div>
+    <p class="sr" id="heroFollowers">—</p>
+  </div>
+
+  <div class="hero-mid"><canvas id="heroCanvas" aria-hidden="true"></canvas></div>
+
+  <div class="wrap hero-bot">
+    <div class="hero-row">
       <div>
-        <div class="lab">FOLLOWERS</div>
-        <div class="hero-figure num" id="heroFollowers">—</div>
-        <div id="heroDelta"></div>
         <div class="hero-sp" id="spark"></div>
+        <div id="heroDelta"></div>
       </div>
       <div class="hero-stats" id="heroStats"></div>
+      <button class="replay" id="replay" type="button">↻ もう一度</button>
     </div>
     <a class="scrolldown" href="#main" aria-label="下へ"
        onclick="event.preventDefault();document.getElementById('main').scrollIntoView({behavior:'smooth'})">▾</a>
@@ -285,7 +305,7 @@ function lineChart(mount, rows, key, color, opt = {}) {
   mount.innerHTML = "";
   const pts = rows.filter(r => r[key] !== null && r[key] !== undefined);
   if (!pts.length) { mount.innerHTML = '<div class="empty">データがありません</div>'; return; }
-  const W = mount.clientWidth || 480, H = 196, m = {t:18, r:16, b:28, l:46};
+  const W = Math.max(mount.clientWidth || 480, 240), H = 196, m = {t:18, r:16, b:28, l:46};
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
   const vals = pts.map(p => +p[key]);
   let lo = Math.min(...vals), hi = Math.max(...vals);
@@ -339,10 +359,10 @@ function lineChart(mount, rows, key, color, opt = {}) {
 function stackedBars(mount, rows) {
   mount.innerHTML = "";
   if (!rows.length) { mount.innerHTML = '<div class="empty">データがありません</div>'; return; }
-  const W = mount.clientWidth || 480, H = 196, m = {t:18, r:16, b:28, l:46};
+  const W = Math.max(mount.clientWidth || 480, 240), H = 196, m = {t:18, r:16, b:28, l:46};
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
   const max = Math.max(1, ...rows.map(r => r.total_likes || 0));
-  const band = iw / rows.length, bw = Math.min(24, band * .6);
+  const band = iw / rows.length, bw = Math.max(2, Math.min(24, band * .6));
   const s1 = cssv("--s1"), s2 = cssv("--s2");
   const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, width:"100%", height:H,
     role:"img", "aria-label":"いいね件数の内訳"});
@@ -398,6 +418,156 @@ function spark(mount, rows) {
   mount.appendChild(svg);
 }
 
+/* ============================================================
+   ヒーロー演出：小さな赤タイルが飛んできてフォロワー数を形づくる
+   （公式サイトの「旨」イントロと同じ組み立て方・タイル1枚＝いいね1件）
+   ============================================================ */
+const Hero = (function () {
+  const hero = $("#hero"), cv = $("#heroCanvas");
+  if (!cv) return {play(){}, setText(){}};
+  const ctx = cv.getContext("2d");
+  let W, H, DPR, targets = [], parts = [], t0 = null, raf = null, running = false;
+  let text = "0";
+  const DURATION = 2600, STEP = 9, TILE = 7.5;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const easeOutCubic = p => 1 - Math.pow(1 - p, 3);
+
+  function resize() {
+    DPR = Math.min(devicePixelRatio || 1, 2);
+    const r = hero.getBoundingClientRect();
+    W = cv.clientWidth || r.width; H = cv.clientHeight || r.height;
+    cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  }
+
+  // 数字をオフスクリーンに描いて、塗られている画素をタイルの着地点にする
+  function buildTargets() {
+    const S = 520, off = document.createElement("canvas");
+    off.width = S; off.height = Math.round(S * 0.52);
+    const o = off.getContext("2d");
+    o.fillStyle = "#000"; o.fillRect(0, 0, off.width, off.height);
+    o.fillStyle = "#fff"; o.textAlign = "center"; o.textBaseline = "middle";
+    let size = Math.round(off.height * 1.02);
+    o.font = `${size}px Anton, "Space Grotesk", sans-serif`;
+    while (o.measureText(text).width > S * 0.92 && size > 20) {
+      size -= 6; o.font = `${size}px Anton, "Space Grotesk", sans-serif`;
+    }
+    o.fillText(text, S / 2, off.height / 2 + off.height * 0.03);
+    const data = o.getImageData(0, 0, off.width, off.height).data;
+    const pts = [];
+    for (let y = STEP / 2; y < off.height; y += STEP) {
+      for (let x = STEP / 2; x < S; x += STEP) {
+        if (data[(Math.floor(y) * S + Math.floor(x)) * 4] > 120) {
+          pts.push({ x: x - S / 2, y: y - off.height / 2 });
+        }
+      }
+    }
+    targets = pts;
+  }
+
+  function buildParts() {
+    parts = targets.map(t => {
+      const ang = Math.random() * Math.PI * 2;
+      const rad = Math.max(W, H) * (0.6 + Math.random() * 0.9);
+      return {
+        tx: t.x, ty: t.y,
+        sx: Math.cos(ang) * rad, sy: Math.sin(ang) * rad,
+        sz: -700 - Math.random() * 1700,
+        delay: Math.random() * 0.5,
+        spin: (Math.random() - 0.5) * 5,
+        pale: Math.random() < 0.3,            // 一部を淡い朱にして奥行きを出す
+      };
+    });
+  }
+
+  function paint(elapsed) {
+    const gp = reduce ? 1 : Math.min(elapsed / DURATION, 1);
+    const assembled = gp >= 1;
+    const idleT = Math.max(0, elapsed - DURATION) / 1000;
+    const yaw = assembled && !reduce ? Math.sin(idleT * 0.5) * 0.4 : 0;
+    const cosY = Math.cos(yaw), sinY = Math.sin(yaw);
+
+    ctx.clearRect(0, 0, W, H);
+    // キャンバス帯のなかに収める（帯は上下の文字を避けて配置済み）
+    const GH = 270, GW = 478;                    // オフスクリーン上の文字の最大寸法
+    const scale = Math.min(H * 0.92 / GH, W * 0.72 / GW);
+    const cx = W / 2, cy = H / 2;
+    const focal = 950;
+
+    for (let i = 0; i < parts.length; i++) {
+      const p = parts[i];
+      let lp = (gp - p.delay) / (1 - p.delay);
+      lp = Math.max(0, Math.min(1, lp));
+      const e = easeOutCubic(lp);
+      let rx, ry, rz;
+      if (assembled) { rx = p.tx * cosY; rz = p.tx * sinY; ry = p.ty; }
+      else {
+        rx = p.sx + (p.tx - p.sx) * e;
+        ry = p.sy + (p.ty - p.sy) * e;
+        rz = p.sz + (0 - p.sz) * e;
+      }
+      const persp = focal / (focal + rz);
+      const sx = cx + rx * scale * persp;
+      const sy = cy + ry * scale * persp;
+      const d = TILE * scale * persp * (0.55 + 0.45 * e);
+      ctx.globalAlpha = Math.max(0, Math.min(1, e * 1.4));
+      ctx.fillStyle = p.pale ? "#e1897e" : "#c0392b";
+      if (!assembled && e < 1) {
+        ctx.save(); ctx.translate(sx, sy); ctx.rotate(p.spin * (1 - e));
+        ctx.fillRect(-d / 2, -d / 2, d, d); ctx.restore();
+      } else {
+        ctx.fillRect(sx - d / 2, sy - d / 2, d, d);
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  function frame(now) {
+    if (!running) return;
+    if (t0 === null) t0 = now;
+    paint(now - t0);
+    raf = requestAnimationFrame(frame);
+  }
+
+  function play() {
+    if (!text) return;
+    resize(); buildTargets(); buildParts();
+    t0 = null; running = true;
+    // タブが裏にあると requestAnimationFrame が止まるので、
+    // 完成形だけは同期で描いておく（裏で開かれても数字が見える）
+    if (reduce || document.hidden) paint(DURATION);
+    if (raf) cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(frame);
+  }
+  function stop() { running = false; if (raf) cancelAnimationFrame(raf); }
+
+  // 表に戻ってきたら描き直す（裏にいる間は rAF が進まないため）
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && running) { t0 = null; raf = requestAnimationFrame(frame); }
+  });
+  addEventListener("resize", () => {
+    if (!running) return;
+    resize(); buildTargets(); buildParts();
+    if (document.hidden) paint(DURATION);
+  });
+  cv.addEventListener("click", play);
+  $("#replay") && $("#replay").addEventListener("click", play);
+
+  // 画面内にあるときだけ動かす（電池・CPU節約）
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(es => es.forEach(en => {
+      if (en.isIntersecting) { if (!running) play(); } else stop();
+    }), { threshold: 0.12 }).observe(hero);
+  }
+
+  return {
+    setText(t) {
+      text = String(t);
+      (document.fonts ? document.fonts.ready : Promise.resolve()).then(play);
+    }
+  };
+})();
+
 /* ---------- 描画 ---------- */
 let DATA = null;
 function render() {
@@ -406,7 +576,8 @@ function render() {
   const today = days.length ? days[days.length-1] : null;
   $("#gen").textContent = (d.generated_at||"").replace("T"," ").slice(0,16);
 
-  $("#heroFollowers").textContent = today ? N(today.followers) : "—";
+  $("#heroFollowers").textContent = today ? `フォロワー ${N(today.followers)}人` : "—";
+  if (today && today.followers != null) Hero.setText(today.followers);
   const g = today ? today.follower_gain : null;
   $("#heroDelta").innerHTML = g == null ? "" :
     `<span class="tag ${g>0?"up":""}">${g>0?"▲":g<0?"▼":"—"} ${g>0?"+":""}${N(g)} 本日</span>`;
