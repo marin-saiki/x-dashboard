@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T13:01:28",
+ "generated_at": "2026-10-13T14:01:07",
  "daily": [
   {
    "date": "2026-10-09",
@@ -294,6 +294,21 @@
   {
    "at": "2026-10-13T13:00:34",
    "hour": 13,
+   "following": {
+    "target": 15,
+    "liked": 0
+   },
+   "foryou": {
+    "target": 48,
+    "liked": 0
+   },
+   "ok": false,
+   "followers": null,
+   "note": "エラー"
+  },
+  {
+   "at": "2026-10-13T14:00:06",
+   "hour": 14,
    "following": {
     "target": 15,
     "liked": 0
