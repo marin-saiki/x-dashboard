@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T13:07:58",
+ "generated_at": "2026-10-16T13:27:03",
  "daily": [
   {
    "date": "2026-10-09",
@@ -58,14 +58,14 @@
   },
   {
    "date": "2026-10-16",
-   "following_likes": 102,
-   "foryou_likes": 360,
-   "total_likes": 462,
+   "following_likes": 112,
+   "foryou_likes": 380,
+   "total_likes": 492,
    "followers": 104,
    "follower_gain": 6,
-   "gain_per_foryou_pct": 1.67,
-   "runs_ok": 7,
-   "runs_total": 21
+   "gain_per_foryou_pct": 1.58,
+   "runs_ok": 8,
+   "runs_total": 22
   }
  ],
  "runs": [
@@ -1346,6 +1346,21 @@
   },
   {
    "at": "2026-10-16T13:00:04",
+   "hour": 13,
+   "following": {
+    "target": 10,
+    "liked": 10
+   },
+   "foryou": {
+    "target": 20,
+    "liked": 20
+   },
+   "ok": true,
+   "followers": 104,
+   "note": ""
+  },
+  {
+   "at": "2026-10-16T13:11:51",
    "hour": 13,
    "following": {
     "target": 10,
