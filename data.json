@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T06:13:34",
+ "generated_at": "2026-10-22T07:16:17",
  "daily": [
   {
    "date": "2026-10-09",
@@ -127,11 +127,11 @@
    "following_likes": 77,
    "foryou_likes": 180,
    "total_likes": 257,
-   "followers": 120,
-   "follower_gain": 1,
-   "gain_per_foryou_pct": 0.56,
+   "followers": 121,
+   "follower_gain": 2,
+   "gain_per_foryou_pct": 1.11,
    "runs_ok": 6,
-   "runs_total": 19
+   "runs_total": 20
   }
  ],
  "runs": [
@@ -2714,6 +2714,21 @@
    "ok": false,
    "followers": 120,
    "note": "候補不足（除外 0 件）"
+  },
+  {
+   "at": "2026-10-22T06:50:21",
+   "hour": 6,
+   "following": {
+    "target": 10,
+    "liked": 0
+   },
+   "foryou": {
+    "target": 20,
+    "liked": 0
+   },
+   "ok": false,
+   "followers": 121,
+   "note": "候補不足（除外 49 件）"
   }
  ]
 }
