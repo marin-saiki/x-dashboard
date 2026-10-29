@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T00:02:25",
+ "generated_at": "2026-10-30T00:42:12",
  "daily": [
   {
    "date": "2026-10-09",
@@ -209,6 +209,17 @@
    "gain_per_foryou_pct": 0.0,
    "runs_ok": 4,
    "runs_total": 4
+  },
+  {
+   "date": "2026-10-30",
+   "following_likes": 5,
+   "foryou_likes": 0,
+   "total_likes": 5,
+   "followers": null,
+   "follower_gain": null,
+   "gain_per_foryou_pct": null,
+   "runs_ok": 0,
+   "runs_total": 0
   }
  ],
  "runs": [
