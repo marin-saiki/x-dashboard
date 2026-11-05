@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T11:19:04",
+ "generated_at": "2026-11-05T11:29:27",
  "daily": [
   {
    "date": "2026-10-09",
@@ -256,32 +256,17 @@
   },
   {
    "date": "2026-11-05",
-   "following_likes": 0,
-   "foryou_likes": 0,
-   "total_likes": 0,
-   "followers": null,
-   "follower_gain": null,
-   "gain_per_foryou_pct": null,
-   "runs_ok": 0,
-   "runs_total": 1
+   "following_likes": 10,
+   "foryou_likes": 20,
+   "total_likes": 30,
+   "followers": 154,
+   "follower_gain": 1,
+   "gain_per_foryou_pct": 5.0,
+   "runs_ok": 1,
+   "runs_total": 2
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-17T10:11:51",
-   "hour": 10,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 110,
-   "note": ""
-  },
   {
    "at": "2026-10-17T10:23:59",
    "hour": 10,
@@ -3866,6 +3851,21 @@
    "ok": false,
    "followers": null,
    "note": "候補不足（除外 0 件）"
+  },
+  {
+   "at": "2026-11-05T11:22:55",
+   "hour": 11,
+   "following": {
+    "target": 10,
+    "liked": 10
+   },
+   "foryou": {
+    "target": 20,
+    "liked": 20
+   },
+   "ok": true,
+   "followers": 154,
+   "note": ""
   }
  ]
 }
