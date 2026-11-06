@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <base href="/x-dashboard/" />
 <title>X 運用ダッシュボード / UMAPRO INC.</title>
+<meta name="theme-color" content="#0b0b0d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="X運用">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Anton&family=Noto+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -162,6 +169,12 @@ td.zero{color:var(--text-3)}
 .pill.part{background:transparent;color:var(--red);border:1.5px solid var(--red-pale)}
 .pill.bad{background:var(--text);color:var(--white)}
 
+summary.sum{cursor:pointer;list-style:none;user-select:none}
+summary.sum::-webkit-details-marker{display:none}
+.sum .chev{font-size:11px;color:var(--text-3);white-space:nowrap;margin-left:4px}
+details[open] .sum .chev::after{content:"（閉じる）"}
+details[open] .sum .chev{font-size:0}
+details[open] .sum .chev::after{font-size:11px}
 .empty{padding:44px;text-align:center;color:var(--text-3);font-size:13px}
 footer{margin-top:60px;background:var(--black);color:rgba(255,255,255,.45);padding:28px 0;font-size:11.5px}
 footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
@@ -264,8 +277,11 @@ svg text{font-family:"DM Mono","Space Grotesk",monospace}
     </div>
 
     <div class="sec">
-      <div class="sec-h"><h2>実行ログ</h2><span class="en">RUNS</span></div>
-      <div class="tw" id="runsTable"></div>
+      <details id="runsBox">
+        <summary class="sec-h sum"><h2>実行ログ</h2><span class="en">RUNS</span>
+          <span class="chev">タップで開く</span></summary>
+        <div class="tw" id="runsTable" style="margin-top:14px"></div>
+      </details>
     </div>
 
   </div>
