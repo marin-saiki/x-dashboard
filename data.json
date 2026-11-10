@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T14:48:40",
+ "generated_at": "2026-11-10T10:27:00",
  "daily": [
   {
    "date": "2026-10-09",
@@ -300,62 +300,28 @@
   },
   {
    "date": "2026-11-09",
-   "following_likes": 0,
-   "foryou_likes": 0,
-   "total_likes": 0,
+   "following_likes": 14,
+   "foryou_likes": 8,
+   "total_likes": 22,
    "followers": null,
    "follower_gain": null,
    "gain_per_foryou_pct": null,
    "runs_ok": 0,
    "runs_total": 1
+  },
+  {
+   "date": "2026-11-10",
+   "following_likes": 14,
+   "foryou_likes": 19,
+   "total_likes": 33,
+   "followers": 198,
+   "follower_gain": 9,
+   "gain_per_foryou_pct": 47.37,
+   "runs_ok": 0,
+   "runs_total": 1
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-21T22:50:18",
-   "hour": 22,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 118,
-   "note": ""
-  },
-  {
-   "at": "2026-10-21T23:11:58",
-   "hour": 23,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 118,
-   "note": ""
-  },
-  {
-   "at": "2026-10-21T23:50:18",
-   "hour": 23,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 119,
-   "note": ""
-  },
   {
    "at": "2026-10-22T00:00:06",
    "hour": 0,
@@ -3910,6 +3876,51 @@
    "ok": false,
    "followers": null,
    "note": "エラー"
+  },
+  {
+   "at": "2026-11-09T15:47:39",
+   "hour": 15,
+   "following": {
+    "target": 14,
+    "liked": 0
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 0
+   },
+   "ok": false,
+   "followers": null,
+   "note": "エラー"
+  },
+  {
+   "at": "2026-11-09T16:47:34",
+   "hour": 16,
+   "following": {
+    "target": 14,
+    "liked": 0
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 0
+   },
+   "ok": false,
+   "followers": null,
+   "note": "エラー"
+  },
+  {
+   "at": "2026-11-10T10:00:29",
+   "hour": 10,
+   "following": {
+    "target": 14,
+    "liked": 14
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 19
+   },
+   "ok": false,
+   "followers": 198,
+   "note": "候補不足（除外 18 件）"
   }
  ]
 }
