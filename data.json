@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T05:09:14",
+ "generated_at": "2026-11-14T06:43:39",
  "daily": [
   {
    "date": "2026-10-09",
@@ -355,21 +355,6 @@
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-22T11:00:07",
-   "hour": 11,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 122,
-   "note": ""
-  },
   {
    "at": "2026-10-22T11:11:54",
    "hour": 11,
@@ -3954,6 +3939,21 @@
    "ok": true,
    "followers": 209,
    "note": ""
+  },
+  {
+   "at": "2026-11-14T06:38:42",
+   "hour": 6,
+   "following": {
+    "target": 14,
+    "liked": 0
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 0
+   },
+   "ok": false,
+   "followers": null,
+   "note": "エラー"
   }
  ]
 }
