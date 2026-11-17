@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T16:06:06",
+ "generated_at": "2026-11-17T17:05:59",
  "accounts": [
   {
    "daily": [
@@ -379,32 +379,17 @@
     },
     {
      "date": "2026-11-17",
-     "following_likes": 182,
-     "foryou_likes": 420,
-     "total_likes": 602,
+     "following_likes": 196,
+     "foryou_likes": 450,
+     "total_likes": 646,
      "followers": 251,
      "follower_gain": 6,
-     "gain_per_foryou_pct": 1.43,
-     "runs_ok": 13,
-     "runs_total": 14
+     "gain_per_foryou_pct": 1.33,
+     "runs_ok": 14,
+     "runs_total": 15
     }
    ],
    "runs": [
-    {
-     "at": "2026-10-25T14:38:24",
-     "hour": 14,
-     "following": {
-      "target": 10,
-      "liked": 10
-     },
-     "foryou": {
-      "target": 20,
-      "liked": 20
-     },
-     "ok": true,
-     "followers": 136,
-     "note": ""
-    },
     {
      "at": "2026-10-25T15:02:46",
      "hour": 15,
@@ -3989,6 +3974,21 @@
      "ok": false,
      "followers": 251,
      "note": "候補不足（除外 6 件）"
+    },
+    {
+     "at": "2026-11-17T17:00:06",
+     "hour": 17,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 251,
+     "note": ""
     }
    ],
    "handle": "Umapro_Saiki",
@@ -4378,32 +4378,17 @@
   },
   {
    "date": "2026-11-17",
-   "following_likes": 182,
-   "foryou_likes": 420,
-   "total_likes": 602,
+   "following_likes": 196,
+   "foryou_likes": 450,
+   "total_likes": 646,
    "followers": 251,
    "follower_gain": 6,
-   "gain_per_foryou_pct": 1.43,
-   "runs_ok": 13,
-   "runs_total": 14
+   "gain_per_foryou_pct": 1.33,
+   "runs_ok": 14,
+   "runs_total": 15
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-25T14:38:24",
-   "hour": 14,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 136,
-   "note": ""
-  },
   {
    "at": "2026-10-25T15:02:46",
    "hour": 15,
@@ -7988,6 +7973,21 @@
    "ok": false,
    "followers": 251,
    "note": "候補不足（除外 6 件）"
+  },
+  {
+   "at": "2026-11-17T17:00:06",
+   "hour": 17,
+   "following": {
+    "target": 14,
+    "liked": 14
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 30
+   },
+   "ok": true,
+   "followers": 251,
+   "note": ""
   }
  ]
 }
