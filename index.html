@@ -79,6 +79,14 @@ body{
   font-family:"Space Grotesk",sans-serif}
 .hero .lab{font-family:"Space Grotesk",sans-serif;font-size:11px;letter-spacing:.24em;
   color:rgba(255,255,255,.55);font-weight:600;margin-top:22px}
+.acct{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.acct button{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.18);
+  color:rgba(255,255,255,.72);border-radius:999px;padding:7px 16px;font-size:12px;
+  font-family:inherit;font-weight:700;cursor:pointer;transition:.15s;min-height:34px;
+  letter-spacing:.04em}
+.acct button:hover{border-color:var(--red)}
+.acct button.on{background:var(--red);border-color:var(--red);color:#fff}
+.acct button small{font-weight:400;opacity:.75;margin-left:5px;font-size:11px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .tag{display:inline-flex;align-items:center;gap:7px;
   padding:8px 18px;border-radius:999px;background:rgba(255,255,255,.1);
@@ -209,6 +217,10 @@ svg text{font-family:"DM Mono","Space Grotesk",monospace}
   </div>
 
   <div class="hero-mid"><canvas id="heroCanvas" aria-hidden="true"></canvas></div>
+
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="acct" id="acct"></div>
+  </div>
 
   <div class="wrap hero-bot">
     <div class="hero-row">
@@ -577,6 +589,10 @@ const Hero = (function () {
   }
 
   return {
+    clear() {                       // データが無いアカウントに切り替えたとき用
+      stop(); text = "";
+      try { resize(); ctx.clearRect(0, 0, W, H); } catch (e) {}
+    },
     setText(t) {
       text = String(t);
       (document.fonts ? document.fonts.ready : Promise.resolve()).then(play);
@@ -594,6 +610,7 @@ function render() {
 
   $("#heroFollowers").textContent = today ? `フォロワー ${N(today.followers)}人` : "—";
   if (today && today.followers != null) Hero.setText(today.followers);
+  else Hero.clear();
   const g = today ? today.follower_gain : null;
   $("#heroDelta").innerHTML = g == null ? "" :
     `<span class="tag ${g>0?"up":""}">${g>0?"▲":g<0?"▼":"—"} ${g>0?"+":""}${N(g)} 本日</span>`;
@@ -678,7 +695,28 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.s
 
 let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(render, 160); });
 
-fetch("data.json?" + Date.now()).then(r => r.json()).then(d => { DATA = d; render(); })
+let ALL = null, CUR = 0;
+
+function pickAccount(i) {
+  CUR = i;
+  const a = ALL.accounts[i];
+  DATA = {generated_at: ALL.generated_at, daily: a.daily, runs: a.runs};
+  $("#acct").querySelectorAll("button").forEach((b, k) => b.classList.toggle("on", k === i));
+  render();
+}
+
+fetch("data.json?" + Date.now()).then(r => r.json()).then(d => {
+  ALL = d.accounts ? d : {generated_at: d.generated_at,
+                          accounts: [{handle: "Umapro_Saiki", label: "本人", daily: d.daily, runs: d.runs}]};
+  $("#acct").innerHTML = ALL.accounts.map((a, i) => {
+    const last = a.daily.length ? a.daily[a.daily.length - 1] : null;
+    const n = last && last.followers != null ? last.followers : "—";
+    return `<button data-i="${i}">@${a.handle}<small>${n}人</small></button>`;
+  }).join("");
+  $("#acct").querySelectorAll("button").forEach(b =>
+    b.addEventListener("click", () => pickAccount(+b.dataset.i)));
+  pickAccount(0);
+})
   .catch(e => { $("#heroStats").innerHTML = `<div class="hs"><div class="n">データを読み込めませんでした（${e}）</div></div>`; });
 </script>
 </body>

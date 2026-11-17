@@ -1,5 +1,4006 @@
 {
- "generated_at": "2026-11-17T13:06:56",
+ "generated_at": "2026-11-17T13:50:17",
+ "accounts": [
+  {
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "following_likes": 43,
+     "foryou_likes": 125,
+     "total_likes": 168,
+     "followers": 41,
+     "follower_gain": 4,
+     "gain_per_foryou_pct": 3.2,
+     "runs_ok": 4,
+     "runs_total": 4
+    },
+    {
+     "date": "2026-10-12",
+     "following_likes": 15,
+     "foryou_likes": 35,
+     "total_likes": 50,
+     "followers": 44,
+     "follower_gain": 3,
+     "gain_per_foryou_pct": 8.57,
+     "runs_ok": 1,
+     "runs_total": 1
+    },
+    {
+     "date": "2026-10-13",
+     "following_likes": 161,
+     "foryou_likes": 448,
+     "total_likes": 609,
+     "followers": 59,
+     "follower_gain": 15,
+     "gain_per_foryou_pct": 3.35,
+     "runs_ok": 7,
+     "runs_total": 11
+    },
+    {
+     "date": "2026-10-14",
+     "following_likes": 160,
+     "foryou_likes": 340,
+     "total_likes": 500,
+     "followers": 75,
+     "follower_gain": 16,
+     "gain_per_foryou_pct": 4.71,
+     "runs_ok": 16,
+     "runs_total": 17
+    },
+    {
+     "date": "2026-10-15",
+     "following_likes": 176,
+     "foryou_likes": 324,
+     "total_likes": 500,
+     "followers": 98,
+     "follower_gain": 23,
+     "gain_per_foryou_pct": 7.1,
+     "runs_ok": 16,
+     "runs_total": 19
+    },
+    {
+     "date": "2026-10-16",
+     "following_likes": 120,
+     "foryou_likes": 380,
+     "total_likes": 500,
+     "followers": 104,
+     "follower_gain": 6,
+     "gain_per_foryou_pct": 1.58,
+     "runs_ok": 9,
+     "runs_total": 23
+    },
+    {
+     "date": "2026-10-17",
+     "following_likes": 141,
+     "foryou_likes": 350,
+     "total_likes": 491,
+     "followers": 110,
+     "follower_gain": 6,
+     "gain_per_foryou_pct": 1.71,
+     "runs_ok": 11,
+     "runs_total": 20
+    },
+    {
+     "date": "2026-10-18",
+     "following_likes": 20,
+     "foryou_likes": 40,
+     "total_likes": 60,
+     "followers": 112,
+     "follower_gain": 2,
+     "gain_per_foryou_pct": 5.0,
+     "runs_ok": 2,
+     "runs_total": 2
+    },
+    {
+     "date": "2026-10-19",
+     "following_likes": 72,
+     "foryou_likes": 231,
+     "total_likes": 303,
+     "followers": 113,
+     "follower_gain": 1,
+     "gain_per_foryou_pct": 0.43,
+     "runs_ok": 5,
+     "runs_total": 12
+    },
+    {
+     "date": "2026-10-20",
+     "following_likes": 97,
+     "foryou_likes": 220,
+     "total_likes": 317,
+     "followers": 115,
+     "follower_gain": 2,
+     "gain_per_foryou_pct": 0.91,
+     "runs_ok": 7,
+     "runs_total": 12
+    },
+    {
+     "date": "2026-10-21",
+     "following_likes": 170,
+     "foryou_likes": 312,
+     "total_likes": 482,
+     "followers": 119,
+     "follower_gain": 4,
+     "gain_per_foryou_pct": 1.28,
+     "runs_ok": 14,
+     "runs_total": 17
+    },
+    {
+     "date": "2026-10-22",
+     "following_likes": 160,
+     "foryou_likes": 340,
+     "total_likes": 500,
+     "followers": 122,
+     "follower_gain": 3,
+     "gain_per_foryou_pct": 0.88,
+     "runs_ok": 15,
+     "runs_total": 30
+    },
+    {
+     "date": "2026-10-23",
+     "following_likes": 172,
+     "foryou_likes": 328,
+     "total_likes": 500,
+     "followers": 129,
+     "follower_gain": 7,
+     "gain_per_foryou_pct": 2.13,
+     "runs_ok": 16,
+     "runs_total": 19
+    },
+    {
+     "date": "2026-10-24",
+     "following_likes": 170,
+     "foryou_likes": 330,
+     "total_likes": 500,
+     "followers": 133,
+     "follower_gain": 4,
+     "gain_per_foryou_pct": 1.21,
+     "runs_ok": 17,
+     "runs_total": 19
+    },
+    {
+     "date": "2026-10-25",
+     "following_likes": 171,
+     "foryou_likes": 329,
+     "total_likes": 500,
+     "followers": 136,
+     "follower_gain": 3,
+     "gain_per_foryou_pct": 0.91,
+     "runs_ok": 16,
+     "runs_total": 18
+    },
+    {
+     "date": "2026-10-26",
+     "following_likes": 100,
+     "foryou_likes": 220,
+     "total_likes": 320,
+     "followers": 142,
+     "follower_gain": 6,
+     "gain_per_foryou_pct": 2.73,
+     "runs_ok": 10,
+     "runs_total": 12
+    },
+    {
+     "date": "2026-10-27",
+     "following_likes": 161,
+     "foryou_likes": 339,
+     "total_likes": 500,
+     "followers": 142,
+     "follower_gain": 0,
+     "gain_per_foryou_pct": 0.0,
+     "runs_ok": 12,
+     "runs_total": 25
+    },
+    {
+     "date": "2026-10-28",
+     "following_likes": 140,
+     "foryou_likes": 274,
+     "total_likes": 414,
+     "followers": 147,
+     "follower_gain": 5,
+     "gain_per_foryou_pct": 1.82,
+     "runs_ok": 11,
+     "runs_total": 17
+    },
+    {
+     "date": "2026-10-29",
+     "following_likes": 40,
+     "foryou_likes": 80,
+     "total_likes": 120,
+     "followers": 147,
+     "follower_gain": 0,
+     "gain_per_foryou_pct": 0.0,
+     "runs_ok": 4,
+     "runs_total": 4
+    },
+    {
+     "date": "2026-10-30",
+     "following_likes": 55,
+     "foryou_likes": 100,
+     "total_likes": 155,
+     "followers": 147,
+     "follower_gain": 0,
+     "gain_per_foryou_pct": 0.0,
+     "runs_ok": 5,
+     "runs_total": 6
+    },
+    {
+     "date": "2026-10-31",
+     "following_likes": 0,
+     "foryou_likes": 0,
+     "total_likes": 0,
+     "followers": null,
+     "follower_gain": null,
+     "gain_per_foryou_pct": null,
+     "runs_ok": 0,
+     "runs_total": 1
+    },
+    {
+     "date": "2026-11-01",
+     "following_likes": 80,
+     "foryou_likes": 155,
+     "total_likes": 235,
+     "followers": 147,
+     "follower_gain": 0,
+     "gain_per_foryou_pct": 0.0,
+     "runs_ok": 6,
+     "runs_total": 24
+    },
+    {
+     "date": "2026-11-04",
+     "following_likes": 100,
+     "foryou_likes": 190,
+     "total_likes": 290,
+     "followers": 153,
+     "follower_gain": 6,
+     "gain_per_foryou_pct": 3.16,
+     "runs_ok": 9,
+     "runs_total": 12
+    },
+    {
+     "date": "2026-11-05",
+     "following_likes": 160,
+     "foryou_likes": 320,
+     "total_likes": 480,
+     "followers": 155,
+     "follower_gain": 2,
+     "gain_per_foryou_pct": 0.62,
+     "runs_ok": 16,
+     "runs_total": 17
+    },
+    {
+     "date": "2026-11-06",
+     "following_likes": 184,
+     "foryou_likes": 347,
+     "total_likes": 531,
+     "followers": 161,
+     "follower_gain": 6,
+     "gain_per_foryou_pct": 1.73,
+     "runs_ok": 17,
+     "runs_total": 18
+    },
+    {
+     "date": "2026-11-07",
+     "following_likes": 14,
+     "foryou_likes": 15,
+     "total_likes": 29,
+     "followers": 178,
+     "follower_gain": 17,
+     "gain_per_foryou_pct": 113.33,
+     "runs_ok": 0,
+     "runs_total": 1
+    },
+    {
+     "date": "2026-11-08",
+     "following_likes": 112,
+     "foryou_likes": 222,
+     "total_likes": 334,
+     "followers": 189,
+     "follower_gain": 11,
+     "gain_per_foryou_pct": 4.95,
+     "runs_ok": 6,
+     "runs_total": 8
+    },
+    {
+     "date": "2026-11-09",
+     "following_likes": 14,
+     "foryou_likes": 8,
+     "total_likes": 22,
+     "followers": null,
+     "follower_gain": null,
+     "gain_per_foryou_pct": null,
+     "runs_ok": 0,
+     "runs_total": 1
+    },
+    {
+     "date": "2026-11-10",
+     "following_likes": 66,
+     "foryou_likes": 100,
+     "total_likes": 166,
+     "followers": 199,
+     "follower_gain": 10,
+     "gain_per_foryou_pct": 10.0,
+     "runs_ok": 2,
+     "runs_total": 5
+    },
+    {
+     "date": "2026-11-12",
+     "following_likes": 154,
+     "foryou_likes": 315,
+     "total_likes": 469,
+     "followers": 206,
+     "follower_gain": 7,
+     "gain_per_foryou_pct": 2.22,
+     "runs_ok": 10,
+     "runs_total": 12
+    },
+    {
+     "date": "2026-11-13",
+     "following_likes": 56,
+     "foryou_likes": 112,
+     "total_likes": 168,
+     "followers": 209,
+     "follower_gain": 3,
+     "gain_per_foryou_pct": 2.68,
+     "runs_ok": 3,
+     "runs_total": 5
+    },
+    {
+     "date": "2026-11-14",
+     "following_likes": 321,
+     "foryou_likes": 660,
+     "total_likes": 981,
+     "followers": 221,
+     "follower_gain": 12,
+     "gain_per_foryou_pct": 1.82,
+     "runs_ok": 22,
+     "runs_total": 23
+    },
+    {
+     "date": "2026-11-15",
+     "following_likes": 224,
+     "foryou_likes": 445,
+     "total_likes": 669,
+     "followers": 229,
+     "follower_gain": 8,
+     "gain_per_foryou_pct": 1.8,
+     "runs_ok": 14,
+     "runs_total": 16
+    },
+    {
+     "date": "2026-11-16",
+     "following_likes": 98,
+     "foryou_likes": 148,
+     "total_likes": 246,
+     "followers": 245,
+     "follower_gain": 16,
+     "gain_per_foryou_pct": 10.81,
+     "runs_ok": 3,
+     "runs_total": 7
+    },
+    {
+     "date": "2026-11-17",
+     "following_likes": 154,
+     "foryou_likes": 330,
+     "total_likes": 484,
+     "followers": 249,
+     "follower_gain": 4,
+     "gain_per_foryou_pct": 1.21,
+     "runs_ok": 11,
+     "runs_total": 11
+    }
+   ],
+   "runs": [
+    {
+     "at": "2026-10-25T13:00:03",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 135,
+     "note": ""
+    },
+    {
+     "at": "2026-10-25T13:38:25",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 135,
+     "note": ""
+    },
+    {
+     "at": "2026-10-25T14:00:04",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 135,
+     "note": ""
+    },
+    {
+     "at": "2026-10-25T14:38:24",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 136,
+     "note": ""
+    },
+    {
+     "at": "2026-10-25T15:02:46",
+     "hour": 15,
+     "following": {
+      "target": 1,
+      "liked": 1
+     },
+     "foryou": {
+      "target": 0,
+      "liked": 0
+     },
+     "ok": true,
+     "followers": 136,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T12:34:58",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 140,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T13:34:41",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-10-26T14:34:52",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 140,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T15:34:42",
+     "hour": 15,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 140,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T16:34:58",
+     "hour": 16,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 140,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T17:34:46",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 141,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T18:34:46",
+     "hour": 18,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 141,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T19:34:41",
+     "hour": 19,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": 141,
+     "note": "候補不足（除外 7 件）"
+    },
+    {
+     "at": "2026-10-26T20:34:41",
+     "hour": 20,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T21:34:42",
+     "hour": 21,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T22:34:42",
+     "hour": 22,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-26T23:34:42",
+     "hour": 23,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T03:08:48",
+     "hour": 3,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T03:34:40",
+     "hour": 3,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T04:08:42",
+     "hour": 4,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T04:34:39",
+     "hour": 4,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T04:38:21",
+     "hour": 4,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T05:08:34",
+     "hour": 5,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T05:34:41",
+     "hour": 5,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T05:38:25",
+     "hour": 5,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-10-27T06:08:35",
+     "hour": 6,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T06:34:42",
+     "hour": 6,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T07:08:35",
+     "hour": 7,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T07:34:41",
+     "hour": 7,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-27T09:59:40",
+     "hour": 9,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 12 件）"
+    },
+    {
+     "at": "2026-10-27T10:08:51",
+     "hour": 10,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-10-27T10:34:45",
+     "hour": 10,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 14 件）"
+    },
+    {
+     "at": "2026-10-27T11:08:34",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 6 件）"
+    },
+    {
+     "at": "2026-10-27T11:34:54",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 142,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-10-27T11:38:30",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 10
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 21 件）"
+    },
+    {
+     "at": "2026-10-27T12:08:35",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": 142,
+     "note": "候補不足（除外 9 件）"
+    },
+    {
+     "at": "2026-10-27T12:34:40",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 142,
+     "note": "候補不足（除外 9 件）"
+    },
+    {
+     "at": "2026-10-27T12:38:28",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 46 件）"
+    },
+    {
+     "at": "2026-10-27T13:08:42",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 5 件）"
+    },
+    {
+     "at": "2026-10-27T13:38:36",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 142,
+     "note": "候補不足（除外 17 件）"
+    },
+    {
+     "at": "2026-10-27T14:08:33",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 142,
+     "note": "候補不足（除外 114 件）"
+    },
+    {
+     "at": "2026-10-27T14:38:25",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 1
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": 142,
+     "note": "候補不足（除外 11 件）"
+    },
+    {
+     "at": "2026-10-27T15:08:31",
+     "hour": 15,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 5,
+      "liked": 5
+     },
+     "ok": true,
+     "followers": 142,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T11:38:41",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 15
+     },
+     "ok": false,
+     "followers": 146,
+     "note": "候補不足（除外 18 件）"
+    },
+    {
+     "at": "2026-10-28T12:28:31",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 19
+     },
+     "ok": false,
+     "followers": 146,
+     "note": "候補不足（除外 64 件）"
+    },
+    {
+     "at": "2026-10-28T13:28:24",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": 146,
+     "note": "候補不足（除外 2 件）"
+    },
+    {
+     "at": "2026-10-28T13:38:23",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 146,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T14:28:25",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 146,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T14:38:21",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 146,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T17:26:52",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 147,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-10-28T17:38:30",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T18:28:24",
+     "hour": 18,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T18:38:23",
+     "hour": 18,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T19:28:23",
+     "hour": 19,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T19:38:23",
+     "hour": 19,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 147,
+     "note": "候補不足（除外 23 件）"
+    },
+    {
+     "at": "2026-10-28T20:28:24",
+     "hour": 20,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 147,
+     "note": "候補不足（除外 36 件）"
+    },
+    {
+     "at": "2026-10-28T21:28:29",
+     "hour": 21,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T22:28:27",
+     "hour": 22,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T23:28:28",
+     "hour": 23,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-28T23:38:24",
+     "hour": 23,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-29T12:38:34",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-29T12:58:35",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-29T23:21:35",
+     "hour": 23,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-29T23:58:29",
+     "hour": 23,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-30T00:58:32",
+     "hour": 0,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 147,
+     "note": "候補不足（除外 28 件）"
+    },
+    {
+     "at": "2026-10-30T01:38:26",
+     "hour": 1,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-30T01:58:31",
+     "hour": 1,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-30T02:38:26",
+     "hour": 2,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-30T02:58:27",
+     "hour": 2,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-30T03:38:29",
+     "hour": 3,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-10-31T18:40:15",
+     "hour": 18,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T00:04:34",
+     "hour": 0,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 147,
+     "note": "候補不足（除外 8 件）"
+    },
+    {
+     "at": "2026-11-01T00:38:25",
+     "hour": 0,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 147,
+     "note": "候補不足（除外 19 件）"
+    },
+    {
+     "at": "2026-11-01T08:19:24",
+     "hour": 8,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": false,
+     "followers": 148,
+     "note": "候補不足（除外 25 件）"
+    },
+    {
+     "at": "2026-11-01T08:38:22",
+     "hour": 8,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 148,
+     "note": ""
+    },
+    {
+     "at": "2026-11-01T09:00:45",
+     "hour": 9,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-11-01T09:38:27",
+     "hour": 9,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-11-01T10:00:43",
+     "hour": 10,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-11-01T10:38:24",
+     "hour": 10,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 147,
+     "note": ""
+    },
+    {
+     "at": "2026-11-01T11:00:47",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": null,
+     "note": ""
+    },
+    {
+     "at": "2026-11-01T11:38:27",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T12:00:45",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T12:38:23",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T13:00:43",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T13:38:24",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T14:00:44",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T14:38:23",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T15:00:43",
+     "hour": 15,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T15:38:26",
+     "hour": 15,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T16:00:43",
+     "hour": 16,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T16:38:25",
+     "hour": 16,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T17:00:44",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T17:38:24",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T18:00:43",
+     "hour": 18,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-01T18:38:25",
+     "hour": 18,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-04T10:31:55",
+     "hour": 10,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T11:00:07",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T11:31:51",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-04T12:00:07",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T13:31:51",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 10
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 20 件）"
+    },
+    {
+     "at": "2026-11-04T14:00:06",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-04T14:31:52",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T15:00:23",
+     "hour": 15,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T16:10:34",
+     "hour": 16,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T16:31:51",
+     "hour": 16,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T17:00:06",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-04T17:31:51",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 153,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T11:16:36",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-05T11:22:55",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 154,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T11:31:51",
+     "hour": 11,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 154,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T12:22:16",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 154,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T12:32:01",
+     "hour": 12,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 154,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T13:22:12",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 154,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T13:31:52",
+     "hour": 13,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T14:22:13",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T14:31:51",
+     "hour": 14,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T15:22:16",
+     "hour": 15,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T15:31:53",
+     "hour": 15,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T16:22:13",
+     "hour": 16,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T17:22:30",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T17:31:54",
+     "hour": 17,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T21:43:36",
+     "hour": 21,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T22:22:55",
+     "hour": 22,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-05T23:22:25",
+     "hour": 23,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 155,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T00:00:15",
+     "hour": 0,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 156,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T00:22:20",
+     "hour": 0,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T00:31:57",
+     "hour": 0,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T01:00:14",
+     "hour": 1,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T01:22:16",
+     "hour": 1,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T01:31:55",
+     "hour": 1,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T02:00:14",
+     "hour": 2,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T02:22:20",
+     "hour": 2,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T02:32:00",
+     "hour": 2,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T03:00:12",
+     "hour": 3,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T03:22:24",
+     "hour": 3,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T03:31:55",
+     "hour": 3,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T04:00:15",
+     "hour": 4,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T04:22:19",
+     "hour": 4,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T04:31:58",
+     "hour": 4,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T05:00:11",
+     "hour": 5,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 20,
+      "liked": 20
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T05:22:15",
+     "hour": 5,
+     "following": {
+      "target": 10,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 10,
+      "liked": 10
+     },
+     "ok": true,
+     "followers": 157,
+     "note": ""
+    },
+    {
+     "at": "2026-11-06T13:48:01",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 17
+     },
+     "ok": false,
+     "followers": 161,
+     "note": "候補不足（除外 45 件）"
+    },
+    {
+     "at": "2026-11-06T15:00:22",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-07T14:34:53",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 15
+     },
+     "ok": false,
+     "followers": 178,
+     "note": "候補不足（除外 23 件）"
+    },
+    {
+     "at": "2026-11-07T15:34:43",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-08T10:48:15",
+     "hour": 10,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-08T11:47:31",
+     "hour": 11,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 182,
+     "note": ""
+    },
+    {
+     "at": "2026-11-08T12:47:32",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 184,
+     "note": ""
+    },
+    {
+     "at": "2026-11-08T13:47:34",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 25
+     },
+     "ok": false,
+     "followers": 186,
+     "note": "候補不足（除外 30 件）"
+    },
+    {
+     "at": "2026-11-08T14:47:35",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 187,
+     "note": ""
+    },
+    {
+     "at": "2026-11-08T15:47:30",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 17
+     },
+     "ok": false,
+     "followers": 189,
+     "note": "候補不足（除外 69 件）"
+    },
+    {
+     "at": "2026-11-08T16:47:43",
+     "hour": 16,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 189,
+     "note": ""
+    },
+    {
+     "at": "2026-11-08T17:47:29",
+     "hour": 17,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 189,
+     "note": ""
+    },
+    {
+     "at": "2026-11-08T18:47:37",
+     "hour": 18,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 189,
+     "note": ""
+    },
+    {
+     "at": "2026-11-09T12:47:36",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-09T14:47:38",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-09T15:47:39",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-09T16:47:34",
+     "hour": 16,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-10T10:00:29",
+     "hour": 10,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 19
+     },
+     "ok": false,
+     "followers": 198,
+     "note": "候補不足（除外 18 件）"
+    },
+    {
+     "at": "2026-11-10T11:00:18",
+     "hour": 11,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 198,
+     "note": ""
+    },
+    {
+     "at": "2026-11-10T12:00:26",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 198,
+     "note": ""
+    },
+    {
+     "at": "2026-11-10T13:00:20",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 21
+     },
+     "ok": false,
+     "followers": 199,
+     "note": "候補不足（除外 34 件）"
+    },
+    {
+     "at": "2026-11-10T14:00:11",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 10
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 30 件）"
+    },
+    {
+     "at": "2026-11-12T12:04:16",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 205,
+     "note": "候補不足（除外 10 件）"
+    },
+    {
+     "at": "2026-11-12T13:30:14",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 205,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T14:30:14",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 205,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T15:30:12",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 205,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T16:30:18",
+     "hour": 16,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 205,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T17:30:44",
+     "hour": 17,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 15
+     },
+     "ok": false,
+     "followers": 204,
+     "note": "候補不足（除外 31 件）"
+    },
+    {
+     "at": "2026-11-12T18:30:18",
+     "hour": 18,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 204,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T19:30:17",
+     "hour": 19,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 205,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T20:30:20",
+     "hour": 20,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": null,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T21:30:14",
+     "hour": 21,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 206,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T22:30:15",
+     "hour": 22,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 206,
+     "note": ""
+    },
+    {
+     "at": "2026-11-12T23:30:17",
+     "hour": 23,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 206,
+     "note": ""
+    },
+    {
+     "at": "2026-11-13T00:30:19",
+     "hour": 0,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 207,
+     "note": ""
+    },
+    {
+     "at": "2026-11-13T01:30:17",
+     "hour": 1,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 207,
+     "note": ""
+    },
+    {
+     "at": "2026-11-13T12:59:22",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "候補不足（除外 0 件）"
+    },
+    {
+     "at": "2026-11-13T13:58:49",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-13T14:58:46",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 22
+     },
+     "ok": false,
+     "followers": 209,
+     "note": "候補不足（除外 42 件）"
+    },
+    {
+     "at": "2026-11-13T15:58:50",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 209,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T00:04:31",
+     "hour": 0,
+     "following": {
+      "target": 14,
+      "liked": 13
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 209,
+     "note": "候補不足（除外 9 件）"
+    },
+    {
+     "at": "2026-11-14T00:58:46",
+     "hour": 0,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 209,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T01:58:44",
+     "hour": 1,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 209,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T02:58:49",
+     "hour": 2,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 209,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T03:58:49",
+     "hour": 3,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 209,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T04:58:52",
+     "hour": 4,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 209,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T06:38:42",
+     "hour": 6,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-14T07:00:13",
+     "hour": 7,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 210,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T08:00:10",
+     "hour": 8,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 211,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T09:00:14",
+     "hour": 9,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 212,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T10:00:13",
+     "hour": 10,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 212,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T11:00:08",
+     "hour": 11,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 212,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T12:00:09",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 212,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T13:00:11",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 213,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T14:00:11",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 213,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T15:00:06",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 215,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T16:00:07",
+     "hour": 16,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 217,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T17:00:07",
+     "hour": 17,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 220,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T18:00:09",
+     "hour": 18,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 221,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T19:00:07",
+     "hour": 19,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 222,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T20:00:07",
+     "hour": 20,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 222,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T21:00:07",
+     "hour": 21,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 222,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T22:00:07",
+     "hour": 22,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 221,
+     "note": ""
+    },
+    {
+     "at": "2026-11-14T23:00:05",
+     "hour": 23,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 221,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T07:00:15",
+     "hour": 7,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 7
+     },
+     "ok": false,
+     "followers": 221,
+     "note": "候補不足（除外 23 件）"
+    },
+    {
+     "at": "2026-11-15T08:00:09",
+     "hour": 8,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 221,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T09:00:07",
+     "hour": 9,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 221,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T10:00:08",
+     "hour": 10,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 221,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T11:00:07",
+     "hour": 11,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 222,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T12:00:08",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 222,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T13:00:09",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 223,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T14:00:07",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 223,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T15:00:08",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 224,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T16:00:12",
+     "hour": 16,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 225,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T17:00:09",
+     "hour": 17,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 225,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T18:00:09",
+     "hour": 18,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 225,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T19:00:08",
+     "hour": 19,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 227,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T20:00:07",
+     "hour": 20,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 228,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T21:00:08",
+     "hour": 21,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 228,
+     "note": ""
+    },
+    {
+     "at": "2026-11-15T23:00:20",
+     "hour": 23,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 18
+     },
+     "ok": false,
+     "followers": 229,
+     "note": "候補不足（除外 73 件）"
+    },
+    {
+     "at": "2026-11-16T10:05:06",
+     "hour": 10,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
+    },
+    {
+     "at": "2026-11-16T11:03:15",
+     "hour": 11,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 1
+     },
+     "ok": false,
+     "followers": 238,
+     "note": "候補不足（除外 57 件）"
+    },
+    {
+     "at": "2026-11-16T12:03:12",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 240,
+     "note": ""
+    },
+    {
+     "at": "2026-11-16T13:07:36",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 240,
+     "note": ""
+    },
+    {
+     "at": "2026-11-16T14:03:23",
+     "hour": 14,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 241,
+     "note": ""
+    },
+    {
+     "at": "2026-11-16T15:03:38",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 19
+     },
+     "ok": false,
+     "followers": 241,
+     "note": "候補不足（除外 44 件）"
+    },
+    {
+     "at": "2026-11-16T16:03:35",
+     "hour": 16,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 10
+     },
+     "ok": false,
+     "followers": 242,
+     "note": "候補不足（除外 50 件）"
+    },
+    {
+     "at": "2026-11-16T23:07:29",
+     "hour": 23,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 28
+     },
+     "ok": false,
+     "followers": 245,
+     "note": "候補不足（除外 55 件）"
+    },
+    {
+     "at": "2026-11-17T00:03:05",
+     "hour": 0,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 245,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T01:03:04",
+     "hour": 1,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 246,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T02:03:06",
+     "hour": 2,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 246,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T03:03:06",
+     "hour": 3,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 246,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T07:00:09",
+     "hour": 7,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 247,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T08:00:08",
+     "hour": 8,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 248,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T09:00:08",
+     "hour": 9,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 248,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T10:00:09",
+     "hour": 10,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 248,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T11:00:05",
+     "hour": 11,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 248,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T12:00:07",
+     "hour": 12,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 248,
+     "note": ""
+    },
+    {
+     "at": "2026-11-17T13:00:16",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 249,
+     "note": ""
+    }
+   ],
+   "handle": "Umapro_Saiki",
+   "label": "サイキ マリン（本人）"
+  },
+  {
+   "daily": [],
+   "runs": [],
+   "handle": "doteppan",
+   "label": "どてっぱん公式"
+  }
+ ],
  "daily": [
   {
    "date": "2026-10-09",
