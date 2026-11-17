@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T20:06:28",
+ "generated_at": "2026-11-17T21:09:32",
  "accounts": [
   {
    "daily": [
@@ -379,32 +379,17 @@
     },
     {
      "date": "2026-11-17",
-     "following_likes": 238,
-     "foryou_likes": 540,
-     "total_likes": 778,
+     "following_likes": 252,
+     "foryou_likes": 570,
+     "total_likes": 822,
      "followers": 257,
      "follower_gain": 12,
-     "gain_per_foryou_pct": 2.22,
-     "runs_ok": 17,
-     "runs_total": 18
+     "gain_per_foryou_pct": 2.11,
+     "runs_ok": 18,
+     "runs_total": 19
     }
    ],
    "runs": [
-    {
-     "at": "2026-10-26T14:34:52",
-     "hour": 14,
-     "following": {
-      "target": 10,
-      "liked": 10
-     },
-     "foryou": {
-      "target": 20,
-      "liked": 20
-     },
-     "ok": true,
-     "followers": 140,
-     "note": ""
-    },
     {
      "at": "2026-10-26T15:34:42",
      "hour": 15,
@@ -3989,6 +3974,21 @@
      "ok": true,
      "followers": 257,
      "note": ""
+    },
+    {
+     "at": "2026-11-17T21:00:05",
+     "hour": 21,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 257,
+     "note": ""
     }
    ],
    "handle": "Umapro_Saiki",
@@ -4378,32 +4378,17 @@
   },
   {
    "date": "2026-11-17",
-   "following_likes": 238,
-   "foryou_likes": 540,
-   "total_likes": 778,
+   "following_likes": 252,
+   "foryou_likes": 570,
+   "total_likes": 822,
    "followers": 257,
    "follower_gain": 12,
-   "gain_per_foryou_pct": 2.22,
-   "runs_ok": 17,
-   "runs_total": 18
+   "gain_per_foryou_pct": 2.11,
+   "runs_ok": 18,
+   "runs_total": 19
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-26T14:34:52",
-   "hour": 14,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 140,
-   "note": ""
-  },
   {
    "at": "2026-10-26T15:34:42",
    "hour": 15,
@@ -7977,6 +7962,21 @@
   {
    "at": "2026-11-17T20:00:10",
    "hour": 20,
+   "following": {
+    "target": 14,
+    "liked": 14
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 30
+   },
+   "ok": true,
+   "followers": 257,
+   "note": ""
+  },
+  {
+   "at": "2026-11-17T21:00:05",
+   "hour": 21,
    "following": {
     "target": 14,
     "liked": 14
