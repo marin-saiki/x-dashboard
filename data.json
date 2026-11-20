@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T15:25:45",
+ "generated_at": "2026-11-20T15:36:39",
  "accounts": [
   {
    "daily": [
@@ -4017,7 +4017,19 @@
    "label": "サイキ マリン（本人）"
   },
   {
-   "daily": [],
+   "daily": [
+    {
+     "date": "2026-11-20",
+     "following_likes": 8,
+     "foryou_likes": 2,
+     "total_likes": 10,
+     "followers": null,
+     "follower_gain": null,
+     "gain_per_foryou_pct": null,
+     "runs_ok": 0,
+     "runs_total": 0
+    }
+   ],
    "runs": [],
    "handle": "doteppan",
    "label": "どてっぱん公式"
