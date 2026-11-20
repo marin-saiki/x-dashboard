@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T15:36:39",
+ "generated_at": "2026-11-20T15:41:52",
  "accounts": [
   {
    "daily": [
@@ -4021,16 +4021,32 @@
     {
      "date": "2026-11-20",
      "following_likes": 8,
-     "foryou_likes": 2,
-     "total_likes": 10,
-     "followers": null,
-     "follower_gain": null,
-     "gain_per_foryou_pct": null,
-     "runs_ok": 0,
-     "runs_total": 0
+     "foryou_likes": 15,
+     "total_likes": 23,
+     "followers": 37,
+     "follower_gain": 0,
+     "gain_per_foryou_pct": 0.0,
+     "runs_ok": 1,
+     "runs_total": 1
     }
    ],
-   "runs": [],
+   "runs": [
+    {
+     "at": "2026-11-20T15:30:14",
+     "hour": 15,
+     "following": {
+      "target": 8,
+      "liked": 8
+     },
+     "foryou": {
+      "target": 15,
+      "liked": 15
+     },
+     "ok": true,
+     "followers": 37,
+     "note": ""
+    }
+   ],
    "handle": "doteppan",
    "label": "どてっぱん公式"
   }
