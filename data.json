@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T13:29:33",
+ "generated_at": "2026-11-21T13:30:10",
  "accounts": [
   {
    "daily": [
@@ -4083,11 +4083,11 @@
      "date": "2026-11-21",
      "following_likes": 30,
      "foryou_likes": 115,
-     "search_likes": 5,
-     "total_likes": 150,
+     "search_likes": 9,
+     "total_likes": 154,
      "followers": 38,
      "follower_gain": 1,
-     "gain_per_foryou_pct": 0.83,
+     "gain_per_foryou_pct": 0.81,
      "runs_ok": 2,
      "runs_total": 3
     }
