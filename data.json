@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T11:13:16",
+ "generated_at": "2026-11-21T11:31:52",
  "accounts": [
   {
    "daily": [
@@ -4082,6 +4082,21 @@
      "ok": true,
      "followers": 38,
      "note": ""
+    },
+    {
+     "at": "2026-11-21T11:31:12",
+     "hour": 11,
+     "following": {
+      "target": 8,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 15,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": null,
+     "note": "エラー"
     }
    ],
    "handle": "doteppan",
