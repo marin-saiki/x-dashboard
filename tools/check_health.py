@@ -23,6 +23,9 @@ def main():
         name = a.get("handle")
         if not runs:
             problems.append(f"[{name}] 実行記録なし"); continue
+        last = datetime.fromisoformat(runs[-1]["at"])
+        if now - last > timedelta(hours=STALE_HOURS):
+            problems.append(f"[{name}] {now - last} 実行されていません（最終 {last}）")
         streak = 0
         for r in reversed(runs):
             if r["ok"]: break
