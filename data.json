@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T07:55:37",
+ "generated_at": "2026-11-22T08:15:04",
  "accounts": [
   {
    "daily": [
@@ -458,24 +458,21 @@
      "gain_per_foryou_pct": 0.26,
      "runs_ok": 11,
      "runs_total": 13
+    },
+    {
+     "date": "2026-11-22",
+     "following_likes": 14,
+     "foryou_likes": 30,
+     "search_likes": 0,
+     "total_likes": 44,
+     "followers": 284,
+     "follower_gain": 1,
+     "gain_per_foryou_pct": 3.33,
+     "runs_ok": 1,
+     "runs_total": 1
     }
    ],
    "runs": [
-    {
-     "at": "2026-10-28T14:38:21",
-     "hour": 14,
-     "following": {
-      "target": 10,
-      "liked": 10
-     },
-     "foryou": {
-      "target": 20,
-      "liked": 20
-     },
-     "ok": true,
-     "followers": 146,
-     "note": ""
-    },
     {
      "at": "2026-10-28T17:26:52",
      "hour": 17,
@@ -4060,6 +4057,21 @@
      "ok": true,
      "followers": 283,
      "note": ""
+    },
+    {
+     "at": "2026-11-22T08:00:09",
+     "hour": 8,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 284,
+     "note": ""
     }
    ],
    "handle": "Umapro_Saiki",
@@ -4866,24 +4878,21 @@
    "gain_per_foryou_pct": 0.26,
    "runs_ok": 11,
    "runs_total": 13
+  },
+  {
+   "date": "2026-11-22",
+   "following_likes": 14,
+   "foryou_likes": 30,
+   "search_likes": 0,
+   "total_likes": 44,
+   "followers": 284,
+   "follower_gain": 1,
+   "gain_per_foryou_pct": 3.33,
+   "runs_ok": 1,
+   "runs_total": 1
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-28T14:38:21",
-   "hour": 14,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 146,
-   "note": ""
-  },
   {
    "at": "2026-10-28T17:26:52",
    "hour": 17,
@@ -8467,6 +8476,21 @@
    },
    "ok": true,
    "followers": 283,
+   "note": ""
+  },
+  {
+   "at": "2026-11-22T08:00:09",
+   "hour": 8,
+   "following": {
+    "target": 14,
+    "liked": 14
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 30
+   },
+   "ok": true,
+   "followers": 284,
    "note": ""
   }
  ]
