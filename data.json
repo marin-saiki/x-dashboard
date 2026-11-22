@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T22:55:22",
+ "generated_at": "2026-11-22T23:26:57",
  "accounts": [
   {
    "daily": [
@@ -468,26 +468,11 @@
      "followers": 282,
      "follower_gain": -1,
      "gain_per_foryou_pct": -0.26,
-     "runs_ok": 13,
-     "runs_total": 15
+     "runs_ok": 14,
+     "runs_total": 16
     }
    ],
    "runs": [
-    {
-     "at": "2026-10-29T23:58:29",
-     "hour": 23,
-     "following": {
-      "target": 10,
-      "liked": 10
-     },
-     "foryou": {
-      "target": 20,
-      "liked": 20
-     },
-     "ok": true,
-     "followers": 147,
-     "note": ""
-    },
     {
      "at": "2026-10-30T00:58:32",
      "hour": 0,
@@ -4072,6 +4057,21 @@
      "ok": false,
      "followers": 282,
      "note": "候補不足（除外 12 件）"
+    },
+    {
+     "at": "2026-11-22T23:00:09",
+     "hour": 23,
+     "following": {
+      "target": 14,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": true,
+     "followers": 282,
+     "note": "時間切れ（run_budget_min を増やすと最後まで回ります）"
     }
    ],
    "handle": "Umapro_Saiki",
@@ -5113,26 +5113,11 @@
    "followers": 282,
    "follower_gain": -1,
    "gain_per_foryou_pct": -0.26,
-   "runs_ok": 13,
-   "runs_total": 15
+   "runs_ok": 14,
+   "runs_total": 16
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-29T23:58:29",
-   "hour": 23,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 147,
-   "note": ""
-  },
   {
    "at": "2026-10-30T00:58:32",
    "hour": 0,
@@ -8717,6 +8702,21 @@
    "ok": false,
    "followers": 282,
    "note": "候補不足（除外 12 件）"
+  },
+  {
+   "at": "2026-11-22T23:00:09",
+   "hour": 23,
+   "following": {
+    "target": 14,
+    "liked": 0
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 0
+   },
+   "ok": true,
+   "followers": 282,
+   "note": "時間切れ（run_budget_min を増やすと最後まで回ります）"
   }
  ]
 }
