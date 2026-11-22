@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T15:14:22",
+ "generated_at": "2026-11-22T15:56:30",
  "accounts": [
   {
    "daily": [
@@ -4106,14 +4106,14 @@
     {
      "date": "2026-11-22",
      "following_likes": 16,
-     "foryou_likes": 45,
-     "search_likes": 77,
-     "total_likes": 138,
+     "foryou_likes": 50,
+     "search_likes": 79,
+     "total_likes": 145,
      "followers": 38,
      "follower_gain": 0,
      "gain_per_foryou_pct": 0.0,
-     "runs_ok": 8,
-     "runs_total": 9
+     "runs_ok": 9,
+     "runs_total": 10
     }
    ],
    "runs": [
@@ -4521,6 +4521,21 @@
      "ok": true,
      "followers": 38,
      "note": "候補不足（除外 467 件）"
+    },
+    {
+     "at": "2026-11-22T15:30:09",
+     "hour": 15,
+     "following": {
+      "target": 5,
+      "liked": 0
+     },
+     "foryou": {
+      "target": 5,
+      "liked": 5
+     },
+     "ok": true,
+     "followers": 38,
+     "note": "時間切れ（run_budget_min を増やすと最後まで回ります）"
     }
    ],
    "handle": "doteppan",
