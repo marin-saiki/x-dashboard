@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T08:18:14",
+ "generated_at": "2026-11-23T08:55:51",
  "accounts": [
   {
    "daily": [
@@ -4129,15 +4129,15 @@
     },
     {
      "date": "2026-11-23",
-     "following_likes": 5,
-     "foryou_likes": 5,
-     "search_likes": 6,
-     "total_likes": 16,
+     "following_likes": 10,
+     "foryou_likes": 10,
+     "search_likes": 12,
+     "total_likes": 32,
      "followers": 38,
      "follower_gain": 0,
      "gain_per_foryou_pct": 0.0,
-     "runs_ok": 1,
-     "runs_total": 1
+     "runs_ok": 2,
+     "runs_total": 2
     }
    ],
    "runs": [
@@ -4684,6 +4684,21 @@
     {
      "at": "2026-11-23T07:30:11",
      "hour": 7,
+     "following": {
+      "target": 5,
+      "liked": 5
+     },
+     "foryou": {
+      "target": 5,
+      "liked": 5
+     },
+     "ok": true,
+     "followers": 38,
+     "note": "時間切れ（run_budget_min を増やすと最後まで回ります）"
+    },
+    {
+     "at": "2026-11-23T08:30:08",
+     "hour": 8,
      "following": {
       "target": 5,
       "liked": 5
