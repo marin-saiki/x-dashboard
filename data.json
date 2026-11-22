@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T21:55:32",
+ "generated_at": "2026-11-22T22:08:03",
  "accounts": [
   {
    "daily": [
@@ -461,33 +461,18 @@
     },
     {
      "date": "2026-11-22",
-     "following_likes": 182,
+     "following_likes": 196,
      "foryou_likes": 390,
      "search_likes": 0,
-     "total_likes": 572,
+     "total_likes": 586,
      "followers": 282,
      "follower_gain": -1,
      "gain_per_foryou_pct": -0.26,
      "runs_ok": 13,
-     "runs_total": 14
+     "runs_total": 15
     }
    ],
    "runs": [
-    {
-     "at": "2026-10-29T23:21:35",
-     "hour": 23,
-     "following": {
-      "target": 10,
-      "liked": 10
-     },
-     "foryou": {
-      "target": 20,
-      "liked": 20
-     },
-     "ok": true,
-     "followers": 147,
-     "note": ""
-    },
     {
      "at": "2026-10-29T23:58:29",
      "hour": 23,
@@ -4072,6 +4057,21 @@
      "ok": true,
      "followers": 282,
      "note": ""
+    },
+    {
+     "at": "2026-11-22T22:00:08",
+     "hour": 22,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 0
+     },
+     "ok": false,
+     "followers": 282,
+     "note": "候補不足（除外 12 件）"
     }
    ],
    "handle": "Umapro_Saiki",
@@ -5091,33 +5091,18 @@
   },
   {
    "date": "2026-11-22",
-   "following_likes": 182,
+   "following_likes": 196,
    "foryou_likes": 390,
    "search_likes": 0,
-   "total_likes": 572,
+   "total_likes": 586,
    "followers": 282,
    "follower_gain": -1,
    "gain_per_foryou_pct": -0.26,
    "runs_ok": 13,
-   "runs_total": 14
+   "runs_total": 15
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-29T23:21:35",
-   "hour": 23,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 147,
-   "note": ""
-  },
   {
    "at": "2026-10-29T23:58:29",
    "hour": 23,
@@ -8702,6 +8687,21 @@
    "ok": true,
    "followers": 282,
    "note": ""
+  },
+  {
+   "at": "2026-11-22T22:00:08",
+   "hour": 22,
+   "following": {
+    "target": 14,
+    "liked": 14
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 0
+   },
+   "ok": false,
+   "followers": 282,
+   "note": "候補不足（除外 12 件）"
   }
  ]
 }
