@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T12:53:18",
+ "generated_at": "2026-11-23T13:25:48",
  "accounts": [
   {
    "daily": [
@@ -473,33 +473,18 @@
     },
     {
      "date": "2026-11-23",
-     "following_likes": 42,
-     "foryou_likes": 41,
+     "following_likes": 56,
+     "foryou_likes": 65,
      "search_likes": 0,
-     "total_likes": 83,
-     "followers": 282,
-     "follower_gain": 0,
-     "gain_per_foryou_pct": 0.0,
-     "runs_ok": 3,
-     "runs_total": 5
+     "total_likes": 121,
+     "followers": 281,
+     "follower_gain": -1,
+     "gain_per_foryou_pct": -1.54,
+     "runs_ok": 4,
+     "runs_total": 6
     }
    ],
    "runs": [
-    {
-     "at": "2026-10-30T03:38:29",
-     "hour": 3,
-     "following": {
-      "target": 10,
-      "liked": 10
-     },
-     "foryou": {
-      "target": 20,
-      "liked": 20
-     },
-     "ok": true,
-     "followers": 147,
-     "note": ""
-    },
     {
      "at": "2026-10-31T18:40:15",
      "hour": 18,
@@ -4084,6 +4069,21 @@
      "ok": true,
      "followers": 282,
      "note": "候補不足（除外 51 件）"
+    },
+    {
+     "at": "2026-11-23T13:00:15",
+     "hour": 13,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 24
+     },
+     "ok": true,
+     "followers": 281,
+     "note": "時間切れ（run_budget_min を増やすと最後まで回ります）"
     }
    ],
    "handle": "Umapro_Saiki",
@@ -5277,33 +5277,18 @@
   },
   {
    "date": "2026-11-23",
-   "following_likes": 42,
-   "foryou_likes": 41,
+   "following_likes": 56,
+   "foryou_likes": 65,
    "search_likes": 0,
-   "total_likes": 83,
-   "followers": 282,
-   "follower_gain": 0,
-   "gain_per_foryou_pct": 0.0,
-   "runs_ok": 3,
-   "runs_total": 5
+   "total_likes": 121,
+   "followers": 281,
+   "follower_gain": -1,
+   "gain_per_foryou_pct": -1.54,
+   "runs_ok": 4,
+   "runs_total": 6
   }
  ],
  "runs": [
-  {
-   "at": "2026-10-30T03:38:29",
-   "hour": 3,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 147,
-   "note": ""
-  },
   {
    "at": "2026-10-31T18:40:15",
    "hour": 18,
@@ -8888,6 +8873,21 @@
    "ok": true,
    "followers": 282,
    "note": "候補不足（除外 51 件）"
+  },
+  {
+   "at": "2026-11-23T13:00:15",
+   "hour": 13,
+   "following": {
+    "target": 14,
+    "liked": 14
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 24
+   },
+   "ok": true,
+   "followers": 281,
+   "note": "時間切れ（run_budget_min を増やすと最後まで回ります）"
   }
  ]
 }
