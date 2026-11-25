@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T14:08:25",
+ "generated_at": "2026-11-25T15:07:21",
  "accounts": [
   {
    "daily": [
@@ -497,33 +497,18 @@
     },
     {
      "date": "2026-11-25",
-     "following_likes": 98,
-     "foryou_likes": 210,
+     "following_likes": 112,
+     "foryou_likes": 240,
      "search_likes": 0,
-     "total_likes": 308,
+     "total_likes": 352,
      "followers": 282,
      "follower_gain": 1,
-     "gain_per_foryou_pct": 0.48,
-     "runs_ok": 7,
-     "runs_total": 8
+     "gain_per_foryou_pct": 0.42,
+     "runs_ok": 8,
+     "runs_total": 9
     }
    ],
    "runs": [
-    {
-     "at": "2026-11-04T14:31:52",
-     "hour": 14,
-     "following": {
-      "target": 10,
-      "liked": 10
-     },
-     "foryou": {
-      "target": 20,
-      "liked": 20
-     },
-     "ok": true,
-     "followers": 153,
-     "note": ""
-    },
     {
      "at": "2026-11-04T15:00:23",
      "hour": 15,
@@ -4108,6 +4093,21 @@
      "ok": true,
      "followers": 282,
      "note": ""
+    },
+    {
+     "at": "2026-11-25T15:00:08",
+     "hour": 15,
+     "following": {
+      "target": 14,
+      "liked": 14
+     },
+     "foryou": {
+      "target": 30,
+      "liked": 30
+     },
+     "ok": true,
+     "followers": 282,
+     "note": ""
     }
    ],
    "handle": "Umapro_Saiki",
@@ -5400,33 +5400,18 @@
   },
   {
    "date": "2026-11-25",
-   "following_likes": 98,
-   "foryou_likes": 210,
+   "following_likes": 112,
+   "foryou_likes": 240,
    "search_likes": 0,
-   "total_likes": 308,
+   "total_likes": 352,
    "followers": 282,
    "follower_gain": 1,
-   "gain_per_foryou_pct": 0.48,
-   "runs_ok": 7,
-   "runs_total": 8
+   "gain_per_foryou_pct": 0.42,
+   "runs_ok": 8,
+   "runs_total": 9
   }
  ],
  "runs": [
-  {
-   "at": "2026-11-04T14:31:52",
-   "hour": 14,
-   "following": {
-    "target": 10,
-    "liked": 10
-   },
-   "foryou": {
-    "target": 20,
-    "liked": 20
-   },
-   "ok": true,
-   "followers": 153,
-   "note": ""
-  },
   {
    "at": "2026-11-04T15:00:23",
    "hour": 15,
@@ -9000,6 +8985,21 @@
   {
    "at": "2026-11-25T14:00:10",
    "hour": 14,
+   "following": {
+    "target": 14,
+    "liked": 14
+   },
+   "foryou": {
+    "target": 30,
+    "liked": 30
+   },
+   "ok": true,
+   "followers": 282,
+   "note": ""
+  },
+  {
+   "at": "2026-11-25T15:00:08",
+   "hour": 15,
    "following": {
     "target": 14,
     "liked": 14
